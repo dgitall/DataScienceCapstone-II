@@ -253,15 +253,15 @@ markovmodel <- setRefClass("markovmodel",
                                calc_dist = function(word_count, words_total)
                                {
                                    dist <- word_count
-                                   print(summary(dist))
+                                   # print(summary(dist))
                                    colnames(dist)[1] <-
                                        "count"
-                                   print(summary(dist))
-                                   print(paste("Dist colnames: ", colnames(dist)))
-                                   print(head(f_count_one))
-                                   print(paste("f_count_one colnames: ", colnames(f_count_one)))
-                                   print(paste("Number of words: ", words_total))
-                                   print(paste("Number of NAs: ", sum(is.na(dist$count))))
+                                   # print(summary(dist))
+                                   # print(paste("Dist colnames: ", colnames(dist)))
+                                   # print(head(f_count_one))
+                                   # print(paste("f_count_one colnames: ", colnames(f_count_one)))
+                                   # print(paste("Number of words: ", words_total))
+                                   # print(paste("Number of NAs: ", sum(is.na(dist$count))))
                                    tryCatch({
                                        dist <-
                                            dist %>% arrange(desc(dist$count))
@@ -287,7 +287,7 @@ markovmodel <- setRefClass("markovmodel",
                                predict = function(word1 = NULL, word2 = NULL)
                                {
                                    predicted_list <- data.frame()
-                                   print(paste("PREDICTION FOR MODEL", f_numwords))
+                                   # print(paste("PREDICTION FOR MODEL", f_numwords))
                                    
                                    if (f_numwords == 0)
                                    {
@@ -316,14 +316,15 @@ markovmodel <- setRefClass("markovmodel",
                                ## of words appearing
                                predict_1 = function(word)
                                {
-                                   print("PREDICT ONE")
-                                   print(summary(f_count_one))
-                                   print(paste("f_count_one colnames: ", colnames(f_count_one)))
-                                   print(paste("Number of words: ", f_total_one))
-                                   dist <- calc_dist(f_count_one, f_total_one)
-                                   dist <- rename(dist, word = first_word)
+                                   # print("PREDICT ONE")
+                                   # print(summary(f_count_one))
+                                   # print(paste("f_count_one colnames: ", colnames(f_count_one)))
+                                   # print(paste("Number of words: ", f_total_one))
+                                   # dist <- calc_dist(f_count_one, f_total_one)
+                                   dist <- rename(f_count_one, word = first_word)
+                                   dist <- subset(dist, select = c(word, prob))
                                    # keep only the most frequent words
-                                   dist <- head(dist, n=f_keep)
+                                   # dist <- head(dist, n=f_keep)
                                    return(dist)
                                },
                                ## Prediction using only the 1-gram and 2-gram
@@ -337,19 +338,19 @@ markovmodel <- setRefClass("markovmodel",
                                ## and return the top f_keep.
                                predict_2 = function(word)
                                {
-                                   print("PREDICT TWO")
-                                   print(paste("Word to find: ", word))
+                                   # print("PREDICT TWO")
+                                   # print(paste("Word to find: ", word))
                                    tryCatch({
                                        # Get the list of 2-grams that start with the word passed in
                                        count_2 <- filter(f_count_two, first_word == word)
-                                       print(paste("count_2 colnames: ", colnames(count_2)))
-                                       print("count_2 Head: ")
-                                       print(head(count_2))
+                                       # print(paste("count_2 colnames: ", colnames(count_2)))
+                                       # print("count_2 Head: ")
+                                       # print(head(count_2))
                                        count_word_first <- sum(count_2$count)
-                                       print(paste("Count of word pairs: ", count_word_first))
+                                       # print(paste("Count of word pairs: ", count_word_first))
                                        count_22 <- calc_dist(count_2, count_word_first)
-                                       print("count_22 Head: ")
-                                       print(head(count_22))
+                                       # print("count_22 Head: ")
+                                       # print(head(count_22))
                                        
                                        # Merge this with f_counts_one to get the counts for the second word
                                        # count_1 <- rename(f_count_one, second_word = first_word)
@@ -369,18 +370,19 @@ markovmodel <- setRefClass("markovmodel",
                                        dist <- head(dist, n=f_keep)
       
                                        # Get the most likely words based on the single word choice
-                                       count_11 <- calc_dist(f_count_one, f_total_one)
-                                       count_11 <- count_11 %>% select(c(first_word, prob))
-                                       count_11 <- rename(count_11, word = first_word)
-                                       count_11 <- head(count_11, n=f_keep)
-                                       print("count_11 Head: ")
-                                       print(count_11)
+                                       # count_11 <- calc_dist(f_count_one, f_total_one)
+                                       # count_11 <- count_11 %>% select(c(first_word, prob))
+                                       count_11 <- rename(f_count_one, word = first_word)
+                                       count_11 <- subset(count_11, select = c(word, prob))
+                                       # count_11 <- head(count_11, n=f_keep)
+                                       # print("count_11 Head: ")
+                                       # print(count_11)
                                        
                                        dist <- rbind(dist,count_11)
                                        dist <-
                                            dist %>% arrange(desc(dist$prob))
-                                       print("dist: ")
-                                       print(dist)
+                                       # print("dist: ")
+                                       # print(dist)
                                        dist <- head(dist, n=f_keep)
                                        
                                        return(dist)
@@ -400,19 +402,19 @@ markovmodel <- setRefClass("markovmodel",
                                },
                                predict_3 = function(word1, word2)
                                {
-                                   print("PREDICT THREE")
-                                   print(paste("Words to find: ", word1, " and ", word2))
+                                   # print("PREDICT THREE")
+                                   # print(paste("Words to find: ", word1, " and ", word2))
                                    tryCatch({
                                        # Get the list of 3-grams that start with the two words passed in
                                        count_3 <- filter(f_count_three, first_word == word1) %>% filter(second_word == word2)
-                                       print(paste("count_3 colnames: ", colnames(count_3)))
-                                       print("count_3 Head: ")
-                                       print(head(count_3))
+                                       # print(paste("count_3 colnames: ", colnames(count_3)))
+                                       # print("count_3 Head: ")
+                                       # print(head(count_3))
                                        count_word_first <- sum(count_3$count)
-                                       print(paste("Count of word pairs: ", count_word_first))
+                                       # print(paste("Count of word pairs: ", count_word_first))
                                        count_33 <- calc_dist(count_3, count_word_first)
-                                       print("count_33 Head: ")
-                                       print(head(count_33))
+                                       # print("count_33 Head: ")
+                                       # print(head(count_33))
                                        
                                        # create distribution list with just the most likely second_word selections
                                        dist <- count_33 %>% select(c(third_word, prob))
@@ -421,14 +423,14 @@ markovmodel <- setRefClass("markovmodel",
                                        
                                        # Get the list of 2-grams that start with the second word passed in
                                        count_2 <- filter(f_count_two, first_word == word2)
-                                       print(paste("count_2 colnames: ", colnames(count_2)))
-                                       print("count_2 Head: ")
-                                       print(head(count_2))
+                                       # print(paste("count_2 colnames: ", colnames(count_2)))
+                                       # print("count_2 Head: ")
+                                       # print(head(count_2))
                                        count_word_first <- sum(count_2$count)
-                                       print(paste("Count of word pairs: ", count_word_first))
+                                       # print(paste("Count of word pairs: ", count_word_first))
                                        count_22 <- calc_dist(count_2, count_word_first)
-                                       print("count_22 Head: ")
-                                       print(head(count_22))
+                                       # print("count_22 Head: ")
+                                       # print(head(count_22))
                                        
                                        # create distribution list with just the most likely second_word selections
                                        count_22 <- count_22 %>% select(c(second_word, prob))
@@ -437,18 +439,19 @@ markovmodel <- setRefClass("markovmodel",
                                        dist <- rbind(dist,count_22)
                                        
                                        # Get the most likely words based on the single word choice
-                                       count_11 <- calc_dist(f_count_one, f_total_one)
-                                       count_11 <- count_11 %>% select(c(first_word, prob))
-                                       count_11 <- rename(count_11, word = first_word)
-                                       count_11 <- head(count_11, n=f_keep)
-                                       print("count_11 Head: ")
-                                       print(count_11)
+                                       # count_11 <- calc_dist(f_count_one, f_total_one)
+                                       # count_11 <- count_11 %>% select(c(first_word, prob))
+                                       count_11 <- rename(f_count_one, word = first_word)
+                                       count_11 <- subset(count_11, select = c(word, prob))
+                                       # count_11 <- head(count_11, n=f_keep)
+                                       # print("count_11 Head: ")
+                                       # print(count_11)
                                        
                                        dist <- rbind(dist,count_11)
                                        dist <-
                                            dist %>% arrange(desc(dist$prob))
-                                       print("dist: ")
-                                       print(dist)
+                                       # print("dist: ")
+                                       # print(dist)
                                        dist <- head(dist, n=f_keep)
                                        
                                        return(dist)
@@ -512,21 +515,32 @@ init_models <- function() {
 #                   threshold = 2, keep = 4)
 
 main <- function(){
+    library(microbenchmark)
+    library(ggplot2)
     
     model_list <- init_models()
    # print(model_list)
-
-    predicted_list <- model_list$model_one$predict()
-    print("Predicted List for Model 1:")
-    print(predicted_list)
-
-    predicted_list <- model_list$model_two$predict('where')
-    print("Predicted List for Model 2:")
-    print(predicted_list)
     
-    predicted_list <- model_list$model_three$predict_3('where', 'i')
-    print("Predicted List for Model 3:")
-    print(predicted_list)
+    results <- microbenchmark(
+        model_list$model_one$predict(),
+        model_list$model_two$predict('where'),
+        model_list$model_three$predict_3('where', 'i'),
+        times = 50)
+    
+    print(results)
+    print(autoplot(results))
+
+    # predicted_list <- model_list$model_one$predict()
+    # print("Predicted List for Model 1:")
+    # print(predicted_list)
+    # 
+    # predicted_list <- model_list$model_two$predict('where')
+    # print("Predicted List for Model 2:")
+    # print(predicted_list)
+    # 
+    # predicted_list <- model_list$model_three$predict_3('where', 'i')
+    # print("Predicted List for Model 3:")
+    # print(predicted_list)
     
     save(model_list, file="Data\\final\\en_US\\model_list.RData")
 }
