@@ -95,6 +95,8 @@ prepareFile <- function(conFile) {
 findWord <- function(list, word) {
     result = FALSE
     
+    print(list)
+    
     for (i in 1:nrow(list)) {
         if (list[i,word] == word) {
             result = TRUE
