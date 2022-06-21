@@ -1,0 +1,10 @@
+Unit: milliseconds
+                                           expr     min      lq       mean   median      uq       max neval
+                 model_list$model_one$predict()  1.5407  1.8214   2.232648  2.07625  2.4485    4.2385    50
+          model_list$model_two$predict("where") 34.7272 37.7633  39.967396 39.36900 41.1728   62.5382    50
+ model_list$model_three$predict_3("where", "i") 77.2417 80.5780 104.211958 83.08455 87.6899 1003.7497    50
+ 
+ This benchmarking added the distinct call to the predictions. It didn't add a lot of time, though.
+ 6/12/2022
+ 
+ 

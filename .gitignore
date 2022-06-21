@@ -5,6 +5,7 @@
 # Session Data files
 .RData
 .RDataTmp
+.RDataTmp*
 
 # User-specific files
 .Ruserdata
@@ -49,5 +50,6 @@ po/*~
 rsconnect/
 *.zip
 Data/*
-.RDataTmp1
 *.RData
+~*.tmp
+~*.docx

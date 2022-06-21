@@ -17,6 +17,7 @@
 library(methods)
 library(dplyr)
 library(tidyr)
+library(data.table)
 
 markovmodel <- setRefClass("markovmodel", 
                            fields = list(f_numwords = "numeric",
@@ -54,7 +55,7 @@ markovmodel <- setRefClass("markovmodel",
                                        # For this one we want to calculate the probabilities and
                                        # trim down to only the number specified
                                        f_count_one <<- calc_dist(f_count_one, f_total_one)
-                                       f_count_one <<- head(f_count_one, f_keep)
+                                       f_count_one <<- head(f_count_one, f_keep*2)
                                        print(paste("1-gram column names: ",colnames(f_count_one)))
                                        print("1-gram head: ")
                                        print(head(f_count_one))
@@ -86,9 +87,9 @@ markovmodel <- setRefClass("markovmodel",
                                                sum(f_count_one$count)
                                            f_count_one$first_word <<- row.names(f_count_one)
                                            # For this one we want to calculate the probabilities and
-                                           # trim down to only the number specified
+                                           # trim down to only the number specified plus some extra if needed
                                            f_count_one <<- calc_dist(f_count_one, f_total_one)
-                                           f_count_one <<- head(f_count_one, f_keep)
+                                           f_count_one <<- head(f_count_one, f_keep*2)
                                            print(paste("1-gram column names: ",colnames(f_count_one)))
                                            print("1-gram head: ")
                                            print(head(f_count_one))
@@ -155,9 +156,9 @@ markovmodel <- setRefClass("markovmodel",
                                                sum(f_count_one$count)
                                            f_count_one$first_word <<- row.names(f_count_one)
                                            # For this one we want to calculate the probabilities and
-                                           # trim down to only the number specified
+                                           # trim down to only the number specified plus some extra if needed
                                            f_count_one <<- calc_dist(f_count_one, f_total_one)
-                                           f_count_one <<- head(f_count_one, f_keep)
+                                           f_count_one <<- head(f_count_one, f_keep*2)
                                            print(paste("1-gram column names: ",colnames(f_count_one)))
                                            print("1-gram head: ")
                                            print(head(f_count_one))
@@ -324,7 +325,7 @@ markovmodel <- setRefClass("markovmodel",
                                    dist <- rename(f_count_one, word = first_word)
                                    dist <- subset(dist, select = c(word, prob))
                                    # keep only the most frequent words
-                                   # dist <- head(dist, n=f_keep)
+                                   dist <- head(dist, n=f_keep)
                                    return(dist)
                                },
                                ## Prediction using only the 1-gram and 2-gram
@@ -343,6 +344,17 @@ markovmodel <- setRefClass("markovmodel",
                                    tryCatch({
                                        # Get the list of 2-grams that start with the word passed in
                                        count_2 <- filter(f_count_two, first_word == word)
+                                       # all_filters <- list(first_word = c(word))
+                                       # cj_filter <- do.call(CJ, all_filters)
+                                       
+                                       # note you could avoid this `do.call` line by
+                                       # cj_filter <- CJ(first_word = c(word))
+                                       # count_2 <- data.table(f_count_two)
+                                       # setkeyv(count_2, names(cj_filter))
+                                       # 
+                                       # count_2 <- count_2[cj_filter]
+                                       # dt <- as.data.table(f_count_two)
+                                       # count_2 <- dt[first_word == word]
                                        # print(paste("count_2 colnames: ", colnames(count_2)))
                                        # print("count_2 Head: ")
                                        # print(head(count_2))
@@ -367,7 +379,7 @@ markovmodel <- setRefClass("markovmodel",
                                        # create distribution list with just the most likely second_word selections
                                        dist <- count_22 %>% select(c(second_word, prob))
                                        dist <- rename(dist, word = second_word)
-                                       dist <- head(dist, n=f_keep)
+                                       dist <- head(dist, n=f_keep*2)
       
                                        # Get the most likely words based on the single word choice
                                        # count_11 <- calc_dist(f_count_one, f_total_one)
@@ -380,7 +392,7 @@ markovmodel <- setRefClass("markovmodel",
                                        
                                        dist <- rbind(dist,count_11)
                                        dist <-
-                                           dist %>% arrange(desc(dist$prob))
+                                           dist %>% arrange(desc(dist$prob)) %>% distinct(word, .keep_all = TRUE)
                                        # print("dist: ")
                                        # print(dist)
                                        dist <- head(dist, n=f_keep)
@@ -406,7 +418,17 @@ markovmodel <- setRefClass("markovmodel",
                                    # print(paste("Words to find: ", word1, " and ", word2))
                                    tryCatch({
                                        # Get the list of 3-grams that start with the two words passed in
-                                       count_3 <- filter(f_count_three, first_word == word1) %>% filter(second_word == word2)
+                                       count_3 <- filter(f_count_three, first_word == word1, second_word == word2)
+                                       # all_filters <- list(first_word = word, second_word = word2)
+                                       # cj_filter <- do.call(CJ, all_filters)
+                                       # DT <- data.table(f_count_two)
+                                       # setkeyv(DT, names(cj_filter))
+                                       # cj_filter <- CJ(first_word = word1, second_word = word2)
+                                       # count_3 <- data.table(f_count_three)
+                                       # setkeyv(count_3, names(cj_filter))
+                                       # count_3 <- count_3[cj_filter]
+                                       # dt <- as.data.table(f_count_three)
+                                       # count_3 <- dt[(first_word == word2) && (second_word == word1)]
                                        # print(paste("count_3 colnames: ", colnames(count_3)))
                                        # print("count_3 Head: ")
                                        # print(head(count_3))
@@ -419,10 +441,17 @@ markovmodel <- setRefClass("markovmodel",
                                        # create distribution list with just the most likely second_word selections
                                        dist <- count_33 %>% select(c(third_word, prob))
                                        dist <- rename(dist, word = third_word)
-                                       dist <- head(dist, n=f_keep)
+                                       dist <- head(dist, n=f_keep*2)
                                        
                                        # Get the list of 2-grams that start with the second word passed in
                                        count_2 <- filter(f_count_two, first_word == word2)
+                                       # cj_filter <- CJ(first_word = c(word2))
+                                       # count_2 <- data.table(f_count_two)
+                                       # setkeyv(count_2, names(cj_filter))
+                                       # 
+                                       # count_2 <- count_2[cj_filter]
+                                       # dt <- as.data.table(f_count_two)
+                                       # count_2 <- dt[first_word == word2]
                                        # print(paste("count_2 colnames: ", colnames(count_2)))
                                        # print("count_2 Head: ")
                                        # print(head(count_2))
@@ -435,7 +464,7 @@ markovmodel <- setRefClass("markovmodel",
                                        # create distribution list with just the most likely second_word selections
                                        count_22 <- count_22 %>% select(c(second_word, prob))
                                        count_22 <- rename(count_22, word = second_word)
-                                       count_22 <- head(count_22, n=f_keep)
+                                       count_22 <- head(count_22, n=f_keep*2)
                                        dist <- rbind(dist,count_22)
                                        
                                        # Get the most likely words based on the single word choice
@@ -449,7 +478,7 @@ markovmodel <- setRefClass("markovmodel",
                                        
                                        dist <- rbind(dist,count_11)
                                        dist <-
-                                           dist %>% arrange(desc(dist$prob))
+                                           dist %>% arrange(desc(dist$prob)) %>% distinct(word, .keep_all = TRUE)
                                        # print("dist: ")
                                        # print(dist)
                                        dist <- head(dist, n=f_keep)
@@ -486,7 +515,7 @@ init_models <- function() {
     
     load(file="Data\\final\\en_US\\totals_onegram.RData") 
     model1 <- markovmodel()
-    model1$init(one_gram = totals_onegram, threshold = 2, keep = 4)
+    model1$init(one_gram = totals_onegram, threshold = 0, keep = 5)
     # print(model1)
     
     load(file="Data\\final\\en_US\\totals_2gram.RData") 
@@ -494,7 +523,7 @@ init_models <- function() {
     model2 <- markovmodel()
     model2$init(one_gram = totals_onegram, 
                 two_gram = totals_2gram, 
-                threshold = 2, keep = 4)
+                threshold = 0, keep = 5)
     # print(model2)
     
     load(file="Data\\final\\en_US\\totals_3gram.RData") 
@@ -502,7 +531,7 @@ init_models <- function() {
     model3$init(one_gram = totals_onegram, 
                 two_gram = totals_2gram, 
                 three_gram = totals_3gram,
-                threshold = 2, keep = 4)
+                threshold = 0, keep = 5)
     # print(model3)
     
     model_list <- list("model_one" = model1, "model_two" = model2, "model_three" = model3)
