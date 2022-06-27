@@ -154,7 +154,7 @@ markovmodel <- setRefClass(
                     flog.debug("2-gram head: ", name = 'markov.log')
                     flog.debug(head(f_count_two), name = 'markov.log')
                     flog.debug("2-gram extras: ", name = 'markov.log')
-                    extras <-f_count_two[,!is.na(f_count_two$extra)]
+                    extras <-f_count_two[!is.na(f_count_two$extra),]
                     flog.debug("count of extras: %s", sum(!is.na(f_count_two$extra)), name = 'markov.log')
                     flog.debug(head(extras), name = 'markov.log')
                 },
