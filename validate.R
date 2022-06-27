@@ -10,6 +10,8 @@ require(methods)
 require(dplyr)
 require(data.table)
 
+source("Tokenize_Files.R")
+
 
 prepareFile <- function(conFile) {
     # Load in the shutterstock list of profane words
@@ -123,7 +125,7 @@ findWord <- function(list, word) {
     max(list$word %in% list(word))==1
 }
 
-prepareData <- function() {
+prepareData3 <- function() {
     
     result <- list()
     
@@ -138,6 +140,28 @@ prepareData <- function() {
     
     result$sum = three_sum
     result$counts <- three_counts
+    
+    print(result$sum)
+    print(head(result$counts))
+    
+    return (result)
+}
+
+prepareData5 <- function() {
+    
+    result <- list()
+    
+    # Load our test set
+    prodTestingFile <- "Data\\final\\en_US\\prod-testing.txt"
+    print(paste("   ...testing data file: ", prodTestingFile))
+    conFile <- file(prodTestingFile, "r")
+    five_counts <- Tokenize_Files::prepareFile(conFile, saveFile=FALSE, only5Gram = TRUE)
+    five_sum <-
+        sum(five_counts$count)
+    print(five_sum)
+    
+    result$sum = five_sum
+    result$counts <- five_counts
     
     print(result$sum)
     print(head(result$counts))
@@ -173,18 +197,22 @@ validateSimple <- function(doLoadData = FALSE, doPrepareData = FALSE, numberTest
     word1_error = 0
     word2_error = 0
     word3_error = 0
+    word5_error = 0
     word1_error_weighted = 0
     word2_error_weighted = 0
     word3_error_weighted = 0
+    word5_error_weighted = 0
     word1_error_any = 0
     word2_error_any = 0
     word3_error_any = 0
+    word5_error_any = 0
     word1_error_any_weighted = 0
     word2_error_any_weighted = 0
     word3_error_any_weighted = 0
+    word5_error_any_weighted = 0
     print("START VALIDATING")
     print(paste("Number of rows: ", nrow(testingData$counts)))
-    print(paste("Number of 3-grams: ", testingData$sum))
+    print(paste("Number of 5-grams: ", testingData$sum))
  #   for (i in 1:nrow(testingData$counts)) {
     if(numberTests == -1) {
         num_tests = nrow(testingData$counts)
