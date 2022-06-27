@@ -53,3 +53,4 @@ Data/*
 *.RData
 ~*.tmp
 ~*.docx
+MarkovLog.txt
