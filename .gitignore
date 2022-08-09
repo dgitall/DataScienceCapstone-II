@@ -54,3 +54,7 @@ Data/*
 ~*.tmp
 ~*.docx
 MarkovLog.txt
+MarkovLog.txt
+ValidateLog.txt
+MarkovLog.txt
+Tokenize.txt

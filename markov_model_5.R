@@ -43,6 +43,22 @@ markovmodel <- setRefClass(
         f_total_five = "numeric"
     ),
     methods = list(
+        copy = function(MModal) {
+            if (MModal$className == "markovmodel") {
+                f_Numwords <<- MModal$f_Numwords
+                f_keep <<- MModal$f_keep
+                f_count_one <<- MModal$f_count_one
+                f_total_one <<- MModal$f_total_one
+                f_count_two <<- MModal$f_count_two
+                f_total_two <<- MModal$f_total_two
+                f_count_three <<- MModal$f_count_three
+                f_total_three <<- MModal$f_total_three
+                f_count_four <<- MModal$f_count_four
+                f_total_four <<- MModal$f_total_four
+                f_count_five <<- MModal$f_count_five
+                f_total_five <<- MModal$f_total_five
+            }
+        },
         init = function(one_gram,
                         two_gram = NULL,
                         three_gram = NULL,
@@ -86,7 +102,7 @@ markovmodel <- setRefClass(
                 
                 # Throw out those with fewer occurrences than the threshold
                 f_count_one <<-
-                    data.frame(f_count_one[f_count_one$"count" >= threshold, ])
+                    data.frame(f_count_one[f_count_one$"count" >= threshold,])
             }
             # If the model is setup to use only the 1- and 2-grams
             else if (is.null(three_gram) &&
@@ -143,8 +159,9 @@ markovmodel <- setRefClass(
                         separate(
                             f_count_two,
                             col = "two_gram",
-                            into = c("first_word", "second_word", "extra"),
-                            sep = "_",
+                            # into = c("first_word", "second_word", "extra"),
+                            into = c("first_word", "second_word"),
+                            sep = "[_]+",
                             extra = "merge",
                             fill = "right"
                         )
@@ -153,10 +170,10 @@ markovmodel <- setRefClass(
                                name = 'markov.log')
                     flog.debug("2-gram head: ", name = 'markov.log')
                     flog.debug(head(f_count_two), name = 'markov.log')
-                    flog.debug("2-gram extras: ", name = 'markov.log')
-                    extras <-f_count_two[!is.na(f_count_two$extra),]
-                    flog.debug("count of extras: %s", sum(!is.na(f_count_two$extra)), name = 'markov.log')
-                    flog.debug(head(extras), name = 'markov.log')
+                    # flog.debug("2-gram extras: ", name = 'markov.log')
+                    # extras <-f_count_two[!is.na(f_count_two$extra),]
+                    # flog.debug("count of extras: %s", sum(!is.na(f_count_two$extra)), name = 'markov.log')
+                    # flog.debug(head(extras), name = 'markov.log')
                 },
                 warning = function(warn) {
                     flog.warn(paste("MY WARNING: ", warn), name = 'markov.log')
@@ -174,9 +191,9 @@ markovmodel <- setRefClass(
                 
                 # keep only the most frequent words
                 f_count_one <<-
-                    data.frame(f_count_one[f_count_one$"count" >= threshold, ])
+                    data.frame(f_count_one[f_count_one$"count" >= threshold,])
                 f_count_two <<-
-                    data.frame(f_count_two[f_count_two$"count" >= threshold, ])
+                    data.frame(f_count_two[f_count_two$"count" >= threshold,])
             }
             # WHen the model is setup to use 1-, 2-, and 3-grams
             else if (!is.null(three_gram) &&
@@ -230,21 +247,24 @@ markovmodel <- setRefClass(
                         sum(f_count_two$count)
                     f_count_two$two_gram <<- row.names(f_count_two)
                     f_count_two <<-
-                        separate(f_count_two,
-                                 "two_gram",
-                                 c("first_word", "second_word", "extra"),
-                                 sep = "_",
-                                 extra = "merge",
-                                 fill = "right")
+                        separate(
+                            f_count_two,
+                            col = "two_gram",
+                            # into = c("first_word", "second_word", "extra"),
+                            into = c("first_word", "second_word"),
+                            sep = "[_]+",
+                            extra = "merge",
+                            fill = "right"
+                        )
                     flog.debug("2-gram column names: %s",
                                colnames(f_count_two),
                                name = 'markov.log')
                     flog.debug("2-gram head: ", name = 'markov.log')
                     flog.debug(head(f_count_two), name = 'markov.log')
-                    flog.debug("2-gram extras: ", name = 'markov.log')
-                    extras <-f_count_two[,!is.na(f_count_two$extra)]
-                    flog.debug("count of extras: %s", sum(!is.na(f_count_two$extra)), name = 'markov.log')
-                    flog.debug(head(extras), name = 'markov.log')
+                    # flog.debug("2-gram extras: ", name = 'markov.log')
+                    # extras <-f_count_two[,!is.na(f_count_two$extra)]
+                    # flog.debug("count of extras: %s", sum(!is.na(f_count_two$extra)), name = 'markov.log')
+                    # flog.debug(head(extras), name = 'markov.log')
                 },
                 warning = function(warn) {
                     flog.warn(paste("MY WARNING: ", warn), name = 'markov.log')
@@ -272,8 +292,9 @@ markovmodel <- setRefClass(
                         separate(
                             f_count_three,
                             "three_gram",
-                            c("first_word", "second_word", "third_word", "extra"),
-                            sep = "_",
+                            # c("first_word", "second_word", "third_word", "extra"),
+                            c("first_word", "second_word", "third_word"),
+                            sep = "[_]+",
                             extra = "merge",
                             fill = "right"
                         )
@@ -282,10 +303,10 @@ markovmodel <- setRefClass(
                                name = 'markov.log')
                     flog.debug("3-gram head: ", name = 'markov.log')
                     flog.debug(head(f_count_three), name = 'markov.log')
-                    flog.debug("3-gram extras: ", name = 'markov.log')
-                    extras <-f_count_three[,!is.na(f_count_three$extra)]
-                    flog.debug("count of extras: %s", sum(!is.na(f_count_three$extra)), name = 'markov.log')
-                    flog.debug(head(extras), name = 'markov.log')
+                    # flog.debug("3-gram extras: ", name = 'markov.log')
+                    # extras <-f_count_three[,!is.na(f_count_three$extra)]
+                    # flog.debug("count of extras: %s", sum(!is.na(f_count_three$extra)), name = 'markov.log')
+                    # flog.debug(head(extras), name = 'markov.log')
                 },
                 warning = function(warn) {
                     flog.warn(paste("MY WARNING: ", warn), name = 'markov.log')
@@ -300,11 +321,11 @@ markovmodel <- setRefClass(
                 # keep only the most frequent words
                 tryCatch({
                     f_count_one <<-
-                        data.frame(f_count_one[f_count_one$"count" >= threshold, ])
+                        data.frame(f_count_one[f_count_one$"count" >= threshold,])
                     f_count_two <<-
-                        data.frame(f_count_two[f_count_two$"count" >= threshold, ])
+                        data.frame(f_count_two[f_count_two$"count" >= threshold,])
                     f_count_three <<-
-                        data.frame(f_count_three[f_count_three$"count" >= threshold, ])
+                        data.frame(f_count_three[f_count_three$"count" >= threshold,])
                 },
                 warning = function(warn) {
                     flog.warn(paste("MY WARNING: ", warn), name = 'markov.log')
@@ -368,21 +389,24 @@ markovmodel <- setRefClass(
                         sum(f_count_two$count)
                     f_count_two$two_gram <<- row.names(f_count_two)
                     f_count_two <<-
-                        separate(f_count_two,
-                                 "two_gram",
-                                 c("first_word", "second_word", "extra"),
-                                 sep = "_",
-                                 extra = "merge",
-                                 fill = "right")
+                        separate(
+                            f_count_two,
+                            "two_gram",
+                            # c("first_word", "second_word", "extra"),
+                            c("first_word", "second_word"),
+                            sep = "[_]+",
+                            extra = "merge",
+                            fill = "right"
+                        )
                     flog.debug("2-gram column names: %s",
                                colnames(f_count_two),
                                name = 'markov.log')
                     flog.debug("2-gram head: ", name = 'markov.log')
                     flog.debug(head(f_count_two), name = 'markov.log')
-                    flog.debug("2-gram extras: ", name = 'markov.log')
-                    extras <-f_count_two[,!is.na(f_count_two$extra)]
-                    flog.debug("count of extras: %s", sum(!is.na(f_count_three$extra)), name = 'markov.log')
-                    flog.debug(head(extras), name = 'markov.log')
+                    # flog.debug("2-gram extras: ", name = 'markov.log')
+                    # extras <-f_count_two[,!is.na(f_count_two$extra)]
+                    # flog.debug("count of extras: %s", sum(!is.na(f_count_three$extra)), name = 'markov.log')
+                    # flog.debug(head(extras), name = 'markov.log')
                 },
                 warning = function(warn) {
                     flog.warn(paste("MY WARNING: ", warn), name = 'markov.log')
@@ -409,10 +433,13 @@ markovmodel <- setRefClass(
                     f_count_three <<- separate(
                         f_count_three,
                         "three_gram",
+                        # c("first_word",
+                        #   "second_word",
+                        #   "third_word", "extra"),
                         c("first_word",
                           "second_word",
-                          "third_word", "extra"),
-                        sep = "_",
+                          "third_word"),
+                        sep = "[_]+",
                         extra = "merge",
                         fill = "right"
                     )
@@ -421,10 +448,10 @@ markovmodel <- setRefClass(
                                name = 'markov.log')
                     flog.debug("3-gram head: ", name = 'markov.log')
                     flog.debug(head(f_count_three), name = 'markov.log')
-                    flog.debug("3-gram extras: ", name = 'markov.log')
-                    extras <-f_count_three[,!is.na(f_count_three$extra)]
-                    flog.debug("count of extras: %s", sum(!is.na(f_count_three$extra)), name = 'markov.log')
-                    flog.debug(head(extras), name = 'markov.log')
+                    # flog.debug("3-gram extras: ", name = 'markov.log')
+                    # extras <-f_count_three[,!is.na(f_count_three$extra)]
+                    # flog.debug("count of extras: %s", sum(!is.na(f_count_three$extra)), name = 'markov.log')
+                    # flog.debug(head(extras), name = 'markov.log')
                 },
                 warning = function(warn) {
                     flog.warn(paste("MY WARNING: ", warn), name = 'markov.log')
@@ -458,7 +485,9 @@ markovmodel <- setRefClass(
                                 "third_word",
                                 "fourth_word"
                             ),
-                            sep = "_"
+                            sep = "[_]+",
+                            extra = "merge",
+                            fill = "right"
                         )
                     flog.debug(paste("four_gram column names: ", colnames(f_count_four)), name = 'markov.log')
                     flog.debug("four_gram head: ", name = 'markov.log')
@@ -497,7 +526,9 @@ markovmodel <- setRefClass(
                                 "fourth_word",
                                 "fifth_word"
                             ),
-                            sep = "_"
+                            sep = "[_]+",
+                            extra = "merge",
+                            fill = "right"
                         )
                     flog.debug(paste("five_gram column names: ", colnames(f_count_five)), name = 'markov.log')
                     flog.debug("five_gram head: ", name = 'markov.log')
@@ -516,15 +547,15 @@ markovmodel <- setRefClass(
                 # keep only the most frequent words
                 tryCatch({
                     f_count_one <<-
-                        data.frame(f_count_one[f_count_one$"count" >= threshold, ])
+                        data.frame(f_count_one[f_count_one$"count" >= threshold,])
                     f_count_two <<-
-                        data.frame(f_count_two[f_count_two$"count" >= threshold, ])
+                        data.frame(f_count_two[f_count_two$"count" >= threshold,])
                     f_count_three <<-
-                        data.frame(f_count_three[f_count_three$"count" >= threshold, ])
+                        data.frame(f_count_three[f_count_three$"count" >= threshold,])
                     f_count_four <<-
-                        data.frame(f_count_four[f_count_four$"count" >= threshold, ])
+                        data.frame(f_count_four[f_count_four$"count" >= threshold,])
                     f_count_five <<-
-                        data.frame(f_count_five[f_count_five$"count" >= threshold, ])
+                        data.frame(f_count_five[f_count_five$"count" >= threshold,])
                 },
                 warning = function(warn) {
                     flog.warn(paste("MY WARNING: ", warn), name = 'markov.log')
@@ -795,9 +826,30 @@ markovmodel <- setRefClass(
         },
         predict5 = function(word1, word2, word3, word4) {
             flog.info("PREDICT FIVE", name = 'markov.log')
-            flog.info(paste("Words to find: ", word1, " and ", word2), name = 'markov.log')
+            flog.info(
+                paste(
+                    "Words to find: '",
+                    word1,
+                    "', '",
+                    word2,
+                    "', '",
+                    word3,
+                    "' and '",
+                    word4,
+                    "'."
+                ),
+                name = 'markov.log'
+            )
             tryCatch({
                 # Get the list of 5-grams that start with the four words passed in
+                flog.debug("...Get list of matching 5-gram phrases starting with all four words",
+                           name = 'markov.log')
+                flog.trace("...f_count_five columns",
+                           name = 'markov.log')
+                flog.trace(colnames(f_count_five),
+                           name = 'markov.log')
+                flog.trace("...f_count_five header", name='markov.log')
+                flog.trace(head(f_count_five), name='markov.log')
                 count_5 <- filter(
                     f_count_five,
                     first_word == word1,
@@ -811,6 +863,7 @@ markovmodel <- setRefClass(
                 count_word_first <- sum(count_5$count)
                 flog.trace(paste("Count of word pairs: ", count_word_first), name = 'markov.log')
                 count_55 <- calc_dist(count_5, count_word_first)
+                flog.trace(paste("count_55 colnames: ", colnames(count_55)), name = 'markov.log')
                 flog.trace("count_55 Head: ", name = 'markov.log')
                 flog.trace(head(count_55), name = 'markov.log')
                 
@@ -818,87 +871,127 @@ markovmodel <- setRefClass(
                 dist <- rename(dist, word = fifth_word)
                 dist <- dist %>% arrange(desc(dist$prob))
                 dist <- head(dist, n = f_keep * 2)
-                flog.trace(dist)
+                flog.trace("distribution matrix - 5", name = 'markov.log')
+                flog.trace(dist, name = 'markov.log')
                 # Check to see if there are enough guesses to fill out the list.
                 # If not, go to the list using only one prior word
                 # create distribution list with just the most likely second_word selections
                 count_55_len <- nrow(dist)
                 if (count_55_len < f_keep) {
-                    # Get the list of 3-grams that start with the two words passed in
+                    # Get the list of 4-grams that start with the two words passed in
+                    flog.debug("Need more matches -- Go to 4-grams", name = 'markov.log')
+                    flog.debug(
+                        paste(
+                            "Words to find: '",
+                            word2,
+                            "', '",
+                            word3,
+                            "' and '",
+                            word4,
+                            "'."
+                        ),
+                        name = 'markov.log'
+                    )
                     count_4 <- filter(
                         f_count_four,
                         first_word == word2,
                         second_word == word3,
                         third_word == word4
                     )
-                    # print(paste("count_3 colnames: ", colnames(count_3)))
-                    # print("count_3 Head: ")
-                    # print(head(count_3))
+                    flog.trace(paste("count_4 colnames: ", colnames(count_4)), name = 'markov.log')
+                    flog.trace("count_4 Head: ", name = 'markov.log')
+                    flog.trace(head(count_4), name = 'markov.log')
                     count_word_first <- sum(count_4$count)
-                    # print(paste("Count of word pairs: ", count_word_first))
+                    flog.trace(paste("Count of word pairs: ", count_word_first),
+                               name = 'markov.log')
                     count_44 <- calc_dist(count_4, count_word_first)
-                    # print("count_33 Head: ")
-                    # print(head(count_33))
+                    flog.trace(paste("count_44 colnames: ", colnames(count_44)), name = 'markov.log')
+                    flog.trace("count_44 Head: ", name = 'markov.log')
+                    flog.trace(head(count_44), name = 'markov.log')
                     
-                    dist <- count_4 %>% select(c(fourth_word, prob))
-                    dist <- rename(dist, word = fourth_word)
-                    dist <- dist %>% arrange(desc(dist$prob))
-                    dist <- head(dist, n = f_keep * 2)
+                    count_44 <- count_44 %>% select(c(fourth_word, prob))
+                    count_44 <- rename(count_44, word = fourth_word)
+                    count_44 <- count_44 %>% arrange(desc(count_44$prob))
+                    
+                    count_44 <- head(count_44, n = f_keep * 2)
+                    flog.trace("distribution matrix - 4", name = 'markov.log')
+                    flog.trace(head(count_44), name='markov.log')
                     # Add these to the end of the guess with four prior words
                     dist <- rbind(dist, count_44)
                     # Sort and remove any duplicates
                     dist <-
                         dist %>% distinct(word, .keep_all = TRUE)
-                    # print(dist)
+                    flog.trace("distribution matrix - comb", name = 'markov.log')
+                    flog.trace(head(dist), name='markov.log')
                     # Check to see if there are enough guesses to fill out the list.
                     # If not, go to the list using only one prior word
                     # create distribution list with just the most likely second_word selections
                     count_44_len <- nrow(dist)
                     if (count_44_len < f_keep) {
+                        flog.debug("Need more matches -- Go to 3-grams", name = 'markov.log')
+                        flog.debug(
+                            paste(
+                                "Words to find: '",
+                                word3,
+                                "' and '",
+                                word4,
+                                "'."
+                            ),
+                            name = 'markov.log'
+                        )
                         # Get the list of 3-grams that start with the two words passed in
                         count_3 <-
                             filter(f_count_three,
                                    first_word == word3,
                                    second_word == word4)
-                        # print(paste("count_3 colnames: ", colnames(count_3)))
-                        # print("count_3 Head: ")
-                        # print(head(count_3))
+                        flog.trace(paste("count_3 colnames: ", colnames(count_3)), name = 'markov.log')
+                        flog.trace("count_3 Head: ", name = 'markov.log')
+                        flog.trace(head(count_3), name = 'markov.log')
                         count_word_first <- sum(count_3$count)
-                        # print(paste("Count of word pairs: ", count_word_first))
+                        flog.trace(paste("Count of word pairs: ", count_word_first), name = 'markov.log')
                         count_33 <-
                             calc_dist(count_3, count_word_first)
-                        # print("count_33 Head: ")
-                        # print(head(count_33))
+                        flog.trace("count_33 Head: ", name = 'markov.log')
+                        flog.trace(head(count_33), name = 'markov.log')
                         
-                        dist <-
+                        count_33 <-
                             count_33 %>% select(c(third_word, prob))
-                        dist <- rename(dist, word = third_word)
-                        dist <- dist %>% arrange(desc(dist$prob))
-                        dist <- head(dist, n = f_keep * 2)
+                        count_33 <- rename(count_33, word = third_word)
+                        count_33 <- count_33 %>% arrange(desc(count_33$prob))
+                        count_33 <- head(count_33, n = f_keep * 2)
                         # Add these to the end of the guess with four prior words
                         dist <- rbind(dist, count_33)
                         # Sort and remove any duplicates
                         dist <-
                             dist %>% distinct(word, .keep_all = TRUE)
                         
-                        # print(dist)
+                        flog.trace((dist), name='markov.log')
                         # Check to see if there are enough guesses to fill out the list.
                         # If not, go to the list using only one prior word
                         # create distribution list with just the most likely second_word selections
                         count_33_len <- nrow(dist)
                         if (count_33_len < f_keep) {
+                            flog.debug("Need more matches -- Go to 2-grams", name = 'markov.log')
+                            flog.debug(
+                                paste(
+                                    "Words to find: '",,
+                                    word4,
+                                    "'."
+                                ),
+                                name = 'markov.log'
+                            )
                             # Get the list of 2-grams that start with the second word passed in
                             count_2 <-
-                                filter(f_count_two, first_word == word2)
-                            # print(paste("count_2 colnames: ", colnames(count_2)))
-                            # print("count_2 Head: ")
-                            # print(head(count_2))
+                                filter(f_count_two, first_word == word4)
+                            flog.trace(paste("count_2 colnames: ", colnames(count_2)), name='markov.log')
+                            flog.trace("count_2 Head: ", name='markov.log')
+                            flog.trace(head(count_2), name='markov.log')
                             count_word_first <- sum(count_2$count)
-                            # print(paste("Count of word pairs: ", count_word_first))
+                            flog.trace(paste("Count of word pairs: ", count_word_first), name='markov.log')
                             count_22 <-
                                 calc_dist(count_2, count_word_first)
-                            # print("count_22 Head: ")
-                            # print(head(count_22))
+                            flog.trace("count_22 Head: ", name='markov.log')
+                            flog.trace(head(count_22), name='markov.log')
                             
                             # create distribution list with just the most likely second_word selections
                             count_22 <-
@@ -911,27 +1004,27 @@ markovmodel <- setRefClass(
                                 count_22 %>% arrange(desc(count_22$prob))
                             count_22 <-
                                 head(count_22, n = f_keep * 2)
-                            # print("count_22")
-                            # print(count_22)
+                            flog.trace("count_22", name='markov.log')
+                            flog.trace(count_22, name='markov.log')
                             # Add these to the end of the guess with two prior words
                             dist <- rbind(dist, count_22)
                             # Sort and remove any duplicates
                             dist <-
                                 dist %>% distinct(word, .keep_all = TRUE)
+                            flog.trace(dist, name='markov.log')
                             # Check to see if we have enough in the list now.
                             # If not, go to the list using no prior words
                             count_22_len <- nrow(dist)
                             if (count_22_len < f_keep) {
                                 # Get the most likely words based on the single word choice
-                                # count_11 <- calc_dist(f_count_one, f_total_one)
-                                # count_11 <- count_11 %>% select(c(first_word, prob))
+                                flog.debug("Need more matches -- Go to 2-grams", name = 'markov.log')
                                 count_11 <-
                                     rename(f_count_one, word = first_word)
                                 count_11 <-
                                     subset(count_11, select = c(word, prob))
-                                # count_11 <- head(count_11, n=f_keep)
-                                # print("count_11 Head: ")
-                                # print(count_11)
+                                count_11 <- head(count_11, n=f_keep)
+                                flog.trace("count_11 Head: ", name='markov.log')
+                                flog.trace(count_11, name='markov.log')
                                 
                                 dist <- rbind(dist, count_11)
                                 # Sort and remove any duplicates
@@ -941,8 +1034,8 @@ markovmodel <- setRefClass(
                         }
                     }
                 }
-                # print("dist: ")
-                # print(dist)
+                flog.trace("dist: ", name='markov.log')
+                flog.trace(dist, name='markov.log')
                 dist <- head(dist, n = f_keep)
                 
                 return(dist)
@@ -967,57 +1060,79 @@ markovmodel <- setRefClass(
     )
 )
 
-init_models <- function() {
-    load(file = "Data\\final\\en_US\\totals_onegram.RData")
-    model1 <- markovmodel()
-    model1$init(one_gram = totals_onegram,
-                threshold = 0,
-                keep = 5)
-    # print(model1)
-    
-    load(file = "Data\\final\\en_US\\totals_2gram.RData")
-    
-    model2 <- markovmodel()
-    model2$init(
-        one_gram = totals_onegram,
-        two_gram = totals_2gram,
-        threshold = 0,
-        keep = 5
-    )
-    # print(model2)
-    
-    load(file = "Data\\final\\en_US\\totals_3gram.RData")
-    model3 <- markovmodel()
-    model3$init(
-        one_gram = totals_onegram,
-        two_gram = totals_2gram,
-        three_gram = totals_3gram,
-        threshold = 0,
-        keep = 5
-    )
-    
-    load(file = "Data\\final\\en_US\\totals_4gram.RData")
-    load(file = "Data\\final\\en_US\\totals_5gram.RData")
-    model5 <- markovmodel()
-    model5$init(
-        one_gram = totals_onegram,
-        two_gram = totals_2gram,
-        three_gram = totals_3gram,
-        four_gram = totals_4gram,
-        five_gram = totals_5gram,
-        threshold = 0,
-        keep = 5
-    )
-    
-    # print(model3)
-    
-    model_list <-
-        list(
-            "model_one" = model1,
-            "model_two" = model2,
-            "model_three" = model3,
-            "model_five" = model5
+init_models <- function(model = "ALL") {
+    if ((model == "ALL") || (model == "ONE")) {
+        load(file = "Data\\final\\en_US\\totals_onegram.RData")
+        model1 <- markovmodel()
+        model1$init(one_gram = totals_onegram,
+                    threshold = 0,
+                    keep = 5)
+        if (model == "ONE")
+            model_list <-
+            list("model_one" = model1)
+    }
+    if ((model == "ALL") || (model == "TWO")) {
+        load(file = "Data\\final\\en_US\\totals_onegram.RData")
+        load(file = "Data\\final\\en_US\\totals_2gram.RData")
+        
+        model2 <- markovmodel()
+        model2$init(
+            one_gram = totals_onegram,
+            two_gram = totals_2gram,
+            threshold = 0,
+            keep = 5
         )
+        if (model == "TWO")
+            model_list <-
+            list("model_two" = model2)
+    }
+    if ((model == "ALL") || (model == "THREE")) {
+        load(file = "Data\\final\\en_US\\totals_onegram.RData")
+        load(file = "Data\\final\\en_US\\totals_2gram.RData")
+        load(file = "Data\\final\\en_US\\totals_3gram.RData")
+        model3 <- markovmodel()
+        model3$init(
+            one_gram = totals_onegram,
+            two_gram = totals_2gram,
+            three_gram = totals_3gram,
+            threshold = 0,
+            keep = 5
+        )
+        if (model == "THREE")
+            model_list <-
+            list("model_three" = model3)
+    }
+    if ((model == "ALL") || (model == "FIVE")) {
+        load(file = "Data\\final\\en_US\\totals_onegram.RData")
+        load(file = "Data\\final\\en_US\\totals_2gram.RData")
+        load(file = "Data\\final\\en_US\\totals_3gram.RData")
+        load(file = "Data\\final\\en_US\\totals_4gram.RData")
+        load(file = "Data\\final\\en_US\\totals_5gram.RData")
+        model5 <- markovmodel()
+        model5$init(
+            one_gram = totals_onegram,
+            two_gram = totals_2gram,
+            three_gram = totals_3gram,
+            four_gram = totals_4gram,
+            five_gram = totals_5gram,
+            threshold = 0,
+            keep = 5
+        )
+        if (model == "FIVE")
+            model_list <-
+            list("model_five" = model5)
+    }
+    
+    if (model == "ALL") {
+        model_list <-
+            list(
+                "model_one" = model1,
+                "model_two" = model2,
+                "model_three" = model3,
+                "model_five" = model5
+            )
+    }
+    
     return(model_list)
 }
 
@@ -1025,11 +1140,12 @@ init_models <- function() {
 # model_except$init(one_gram = totals_onegram,
 #                   three_gram = totals_3gram,
 #                   threshold = 2, keep = 4)
-
-main <- function(loggingTreshold = INFO,
-                 logFile = NULL) {
     library(microbenchmark)
     library(ggplot2)
+main <- function(loggingTreshold = INFO,
+                 logFile = NULL,
+                 model = "ALL") {
+
     
     flog.threshold(loggingTreshold, name = 'markov.log')
     if (is.null(logFile)) {
@@ -1039,7 +1155,7 @@ main <- function(loggingTreshold = INFO,
         flog.appender(appender.file(logFile), name = 'markov.log')
     }
     
-    model_list <- init_models()
+    model_list <- init_models(model)
     flog.debug(model_list, name = 'markov.log')
     
     # results <- microbenchmark(
@@ -1052,30 +1168,54 @@ main <- function(loggingTreshold = INFO,
     # print(results)
     # print(autoplot(results))
     
-    predictedList <- model_list$model_one$predict()
-    flog.debug("Predicted List for Model 1:", name = 'markov.log')
-    flog.debug(predictedList, name = 'markov.log')
     
-    predictedList <- model_list$model_two$predict('where')
-    flog.debug("Predicted List for Model 2:", name = 'markov.log')
-    flog.debug(predictedList, name = 'markov.log')
+    if ((model == "ALL") ||
+        (model == "ONE")) {
+        predictedList <- model_list$model_one$predict()
+        flog.debug("Predicted List for Model 1:", name = 'markov.log')
+        flog.debug(predictedList, name = 'markov.log')
+        #save(model_list$model_one, file = "Data\\final\\en_US\\model_one.RData")
+    }
     
-    predictedList <- model_list$model_three$predict3('heavy', 'cre')
-    flog.debug("Predicted List for Model 3:", name = 'markov.log')
-    flog.debug(predictedList, name = 'markov.log')
+    if ((model == "ALL") ||
+        (model == "TWO")) {
+        predictedList <- model_list$model_two$predict('where')
+        flog.debug("Predicted List for Model 2:", name = 'markov.log')
+        flog.debug(predictedList, name = 'markov.log')
+        # 
+        #save(model_list$model_two, file = "Data\\final\\en_US\\model_two.RData")
+    }
     
-    predictedList <-
-        model_list$model_five$predict("bring", "a", "case", "of")
-    flog.debug("Predicted List for Model 5:")
-    flog.debug(predictedList, name = 'markov.log')
+    if ((model == "ALL") ||
+        (model == "THREE")) {
+        predictedList <- model_list$model_three$predict3('heavy', 'cre')
+        flog.debug("Predicted List for Model 3:", name = 'markov.log')
+        flog.debug(predictedList, name = 'markov.log')
+        
+        #save(model_list$model_three, file = "Data\\final\\en_US\\model_three.RData")
+    }
     
-    save(model_list, file = "Data\\final\\en_US\\model_list5.RData")
-    save(model_list$model_one, file = "Data\\final\\en_US\\model_one.RData")
-    save(model_list$model_two, file = "Data\\final\\en_US\\model_two.RData")
-    save(model_list$model_three, file = "Data\\final\\en_US\\model_three.RData")
-    save(model_list$model_five, file = "Data\\final\\en_US\\model_five.RData")
+    if ((model == "ALL") || (model == "FIVE")) {
+        predictedList <-
+            model_list$model_five$predict("bring", "a", "case", "of")
+        flog.debug("Predicted List for Model 5:", name = 'markov.log')
+        flog.debug(predictedList, name = 'markov.log')
+        #save(model_list$model_five, file = "Data\\final\\en_US\\model_five.RData")
+        flog.debug("Model Five Saved", name = 'markov.log')
+    }
+    
+    filename = paste("Data\\final\\en_US\\model_list_", model, ".RData", sep="")
+    save(model_list, file = filename)
+    flog.debug("Model List", name = 'markov.log')
     
     return(model_list)
 }
 
-models <- main(loggingTreshold = DEBUG, logFile = 'MarkovLog.txt')
+# models <-
+#     main(loggingTreshold = DEBUG, logFile = 'MarkovLog.txt', "ONE")
+# models <-
+#     main(loggingTreshold = DEBUG, logFile = 'MarkovLog.txt', "TWO")
+# models <-
+#     main(loggingTreshold = DEBUG, logFile = 'MarkovLog.txt', "THREE")
+# 
+#models <- main(loggingTreshold = TRACE, logFile = 'MarkovLog.txt', "FIVE")
