@@ -149,7 +149,8 @@ prepareData3 <- function() {
     return (result)
 }
 
-prepareData5 <- function(logName = NULL) {
+prepareData5 <- 
+    function(logName = NULL) {
     result <- list()
     
     # Load our test set
@@ -519,3 +520,4 @@ validateSimple <-
             , name = 'validate.log')
     }
 
+# validateSimple(doLoadData=TRUE, numberTests = -1, modelFile = "Data\\final\\en_US\\model_list_ALL.RData", testingFile = "Data\\final\\en_US\\testingDataVALIDATING.RData", logFile = "validate.txt")

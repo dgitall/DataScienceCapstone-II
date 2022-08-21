@@ -1,0 +1,1817 @@
+INFO [2022-08-07 21:11:18] MODEL 1
+DEBUG [2022-08-07 21:11:19] 1-gram column names:  count
+DEBUG [2022-08-07 21:11:19] 1-gram column names:  first_word
+DEBUG [2022-08-07 21:11:19] 1-gram column names:  prob
+DEBUG [2022-08-07 21:11:19] 1-gram head: 
+DEBUG [2022-08-07 21:11:19] c(1178060, 771039, 639609, 632437, 603127, 518486)
+DEBUG [2022-08-07 21:11:19] c("the", "to", "and", "a", "i", "of")
+DEBUG [2022-08-07 21:11:19] c(0.0425314897509385, 0.0278368141911905, 0.0230917980647064, 0.0228328674121982, 0.0217746887416721, 0.0187188954679771)
+INFO [2022-08-07 21:11:29] MODEL 2
+DEBUG [2022-08-07 21:11:31] 1-gram column names:  count
+DEBUG [2022-08-07 21:11:31] 1-gram column names:  first_word
+DEBUG [2022-08-07 21:11:31] 1-gram column names:  prob
+DEBUG [2022-08-07 21:11:31] 1-gram head: 
+DEBUG [2022-08-07 21:11:31] c(1178060, 771039, 639609, 632437, 603127, 518486)
+DEBUG [2022-08-07 21:11:31] c("the", "to", "and", "a", "i", "of")
+DEBUG [2022-08-07 21:11:31] c(0.0425314897509385, 0.0278368141911905, 0.0230917980647064, 0.0228328674121982, 0.0217746887416721, 0.0187188954679771)
+DEBUG [2022-08-07 21:15:46] 2-gram column names: count
+DEBUG [2022-08-07 21:15:46] 2-gram head: 
+DEBUG [2022-08-07 21:15:46] c(1854, 11085, 22, 14, 17818, 54553)
+DEBUG [2022-08-07 21:15:46] c("how", "are", "you", "btw", "thanks", "for")
+DEBUG [2022-08-07 21:15:46] c("are", "you", "btw", "thanks", "for", "the")
+INFO [2022-08-07 21:16:36] MODEL 3
+DEBUG [2022-08-07 21:16:37] 1-gram column names:  count
+DEBUG [2022-08-07 21:16:37] 1-gram column names:  first_word
+DEBUG [2022-08-07 21:16:37] 1-gram column names:  prob
+DEBUG [2022-08-07 21:16:37] 1-gram head: 
+DEBUG [2022-08-07 21:16:37] c(1178060, 771039, 639609, 632437, 603127, 518486)
+DEBUG [2022-08-07 21:16:37] c("the", "to", "and", "a", "i", "of")
+DEBUG [2022-08-07 21:16:37] c(0.0425314897509385, 0.0278368141911905, 0.0230917980647064, 0.0228328674121982, 0.0217746887416721, 0.0187188954679771)
+DEBUG [2022-08-07 21:23:03] 2-gram column names: count
+DEBUG [2022-08-07 21:23:03] 2-gram head: 
+DEBUG [2022-08-07 21:23:03] c(1854, 11085, 22, 14, 17818, 54553)
+DEBUG [2022-08-07 21:23:03] c("how", "are", "you", "btw", "thanks", "for")
+DEBUG [2022-08-07 21:23:03] c("are", "you", "btw", "thanks", "for", "the")
+DEBUG [2022-08-07 21:37:03] 3-gram column names: count
+DEBUG [2022-08-07 21:37:03] 3-gram head: 
+DEBUG [2022-08-07 21:37:03] c(1358, 3, 1, 12, 9439, 1726)
+DEBUG [2022-08-07 21:37:03] c("how", "are", "you", "btw", "thanks", "for")
+DEBUG [2022-08-07 21:37:03] c("are", "you", "btw", "thanks", "for", "the")
+DEBUG [2022-08-07 21:37:03] c("you", "btw", "thanks", "for", "the", "rt")
+INFO [2022-08-07 21:39:30] MODEL 5
+DEBUG [2022-08-07 21:39:30] 1-gram column names:  count
+DEBUG [2022-08-07 21:39:30] 1-gram column names:  first_word
+DEBUG [2022-08-07 21:39:30] 1-gram column names:  prob
+DEBUG [2022-08-07 21:39:30] 1-gram head: 
+DEBUG [2022-08-07 21:39:30] c(1178060, 771039, 639609, 632437, 603127, 518486)
+DEBUG [2022-08-07 21:39:30] c("the", "to", "and", "a", "i", "of")
+DEBUG [2022-08-07 21:39:30] c(0.0425314897509385, 0.0278368141911905, 0.0230917980647064, 0.0228328674121982, 0.0217746887416721, 0.0187188954679771)
+DEBUG [2022-08-07 21:46:16] 2-gram column names: count
+DEBUG [2022-08-07 21:46:16] 2-gram head: 
+DEBUG [2022-08-07 21:46:16] c(1854, 11085, 22, 14, 17818, 54553)
+DEBUG [2022-08-07 21:46:16] c("how", "are", "you", "btw", "thanks", "for")
+DEBUG [2022-08-07 21:46:16] c("are", "you", "btw", "thanks", "for", "the")
+DEBUG [2022-08-07 22:02:47] 3-gram column names: count
+DEBUG [2022-08-07 22:02:47] 3-gram head: 
+DEBUG [2022-08-07 22:02:47] c(1358, 3, 1, 12, 9439, 1726)
+DEBUG [2022-08-07 22:02:47] c("how", "are", "you", "btw", "thanks", "for")
+DEBUG [2022-08-07 22:02:47] c("are", "you", "btw", "thanks", "for", "the")
+DEBUG [2022-08-07 22:02:47] c("you", "btw", "thanks", "for", "the", "rt")
+DEBUG [2022-08-07 22:27:39] four_gram column names:  count
+DEBUG [2022-08-07 22:27:39] four_gram column names:  first_word
+DEBUG [2022-08-07 22:27:39] four_gram column names:  second_word
+DEBUG [2022-08-07 22:27:39] four_gram column names:  third_word
+DEBUG [2022-08-07 22:27:39] four_gram column names:  fourth_word
+DEBUG [2022-08-07 22:27:39] four_gram head: 
+DEBUG [2022-08-07 22:27:39] c(3, 1, 1, 3, 1347, 20)
+DEBUG [2022-08-07 22:27:39] c("how", "are", "you", "btw", "thanks", "for")
+DEBUG [2022-08-07 22:27:39] c("are", "you", "btw", "thanks", "for", "the")
+DEBUG [2022-08-07 22:27:39] c("you", "btw", "thanks", "for", "the", "rt")
+DEBUG [2022-08-07 22:27:39] c("btw", "thanks", "for", "the", "rt", "you")
+DEBUG [2022-08-07 22:50:17] five_gram column names:  count
+DEBUG [2022-08-07 22:50:17] five_gram column names:  first_word
+DEBUG [2022-08-07 22:50:17] five_gram column names:  second_word
+DEBUG [2022-08-07 22:50:17] five_gram column names:  third_word
+DEBUG [2022-08-07 22:50:17] five_gram column names:  fourth_word
+DEBUG [2022-08-07 22:50:17] five_gram column names:  fifth_word
+DEBUG [2022-08-07 22:50:17] five_gram head: 
+DEBUG [2022-08-07 22:50:18] c(1, 1, 1, 1, 14, 1)
+DEBUG [2022-08-07 22:50:18] c("how", "are", "you", "btw", "thanks", "for")
+DEBUG [2022-08-07 22:50:18] c("are", "you", "btw", "thanks", "for", "the")
+DEBUG [2022-08-07 22:50:18] c("you", "btw", "thanks", "for", "the", "rt")
+DEBUG [2022-08-07 22:50:18] c("btw", "thanks", "for", "the", "rt", "you")
+DEBUG [2022-08-07 22:50:18] c("thanks", "for", "the", "rt", "you", "gonna")
+DEBUG [2022-08-07 22:53:06] new("markovmodel", .xData = <environment>)
+DEBUG [2022-08-07 22:53:06] new("markovmodel", .xData = <environment>)
+DEBUG [2022-08-07 22:53:06] new("markovmodel", .xData = <environment>)
+DEBUG [2022-08-07 22:53:06] new("markovmodel", .xData = <environment>)
+INFO [2022-08-07 22:53:06] PREDICT ONE
+DEBUG [2022-08-07 22:53:06] Min.   : 309676  
+DEBUG [2022-08-07 22:53:06] 1st Qu.: 359006  
+DEBUG [2022-08-07 22:53:06] Median : 560807  
+DEBUG [2022-08-07 22:53:06] Mean   : 573170  
+DEBUG [2022-08-07 22:53:06] 3rd Qu.: 637816  
+DEBUG [2022-08-07 22:53:06] Max.   :1178060  
+DEBUG [2022-08-07 22:53:06] Length:10         
+DEBUG [2022-08-07 22:53:06] Class :character  
+DEBUG [2022-08-07 22:53:06] Mode  :character  
+DEBUG [2022-08-07 22:53:06] NA
+DEBUG [2022-08-07 22:53:06] NA
+DEBUG [2022-08-07 22:53:06] NA
+DEBUG [2022-08-07 22:53:06] Min.   :0.01118  
+DEBUG [2022-08-07 22:53:06] 1st Qu.:0.01296  
+DEBUG [2022-08-07 22:53:06] Median :0.02025  
+DEBUG [2022-08-07 22:53:06] Mean   :0.02069  
+DEBUG [2022-08-07 22:53:06] 3rd Qu.:0.02303  
+DEBUG [2022-08-07 22:53:06] Max.   :0.04253  
+DEBUG [2022-08-07 22:53:06] f_count_one colnames:  count
+DEBUG [2022-08-07 22:53:06] f_count_one colnames:  first_word
+DEBUG [2022-08-07 22:53:06] f_count_one colnames:  prob
+DEBUG [2022-08-07 22:53:06] Number of words:  27698536
+DEBUG [2022-08-07 22:53:06] Predicted List for Model 1:
+DEBUG [2022-08-07 22:53:06] c("the", "to", "and", "a", "i")
+DEBUG [2022-08-07 22:53:06] c(0.0425314897509385, 0.0278368141911905, 0.0230917980647064, 0.0228328674121982, 0.0217746887416721)
+INFO [2022-08-07 22:53:06] PREDICT TWO
+INFO [2022-08-07 22:53:06] Word to find:  where
+DEBUG [2022-08-07 22:53:07] Predicted List for Model 2:
+DEBUG [2022-08-07 22:53:07] c("the", "i", "you", "we", "are")
+DEBUG [2022-08-07 22:53:07] c(0.101676224084693, 0.101014556682841, 0.0771577709160418, 0.0449933833259815, 0.0385237465078665)
+INFO [2022-08-07 22:53:07] PREDICT THREE
+INFO [2022-08-07 22:53:07] Words to find:  heavy  and  cre
+DEBUG [2022-08-07 22:53:09] Predicted List for Model 3:
+DEBUG [2022-08-07 22:53:10] c("pros", "lending", "firm", "property", "industry")
+DEBUG [2022-08-07 22:53:10] c(0.0769230769230769, 0.0384615384615385, 0.0384615384615385, 0.0384615384615385, 0.0384615384615385)
+INFO [2022-08-07 22:53:10] PREDICT FIVE
+INFO [2022-08-07 22:53:10] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-07 22:53:10] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-07 22:53:11] Need more matches -- Go to 4-grams
+DEBUG [2022-08-07 22:53:11] Words to find: ' a ', ' case ' and ' of '.
+DEBUG [2022-08-07 22:53:12] Predicted List for Model 5:
+DEBUG [2022-08-07 22:53:12] c("the", "beer", "wine", "a", "if")
+DEBUG [2022-08-07 22:53:12] c(0.207865168539326, 0.0337078651685393, 0.0168539325842697, 0.0168539325842697, 0.0168539325842697)
+DEBUG [2022-08-07 22:53:12] Model Five Saved
+DEBUG [2022-08-07 23:02:06] Model List
+INFO [2022-08-08 08:05:04] PREDICT THREE
+INFO [2022-08-08 08:05:04] Words to find:  case  and  of
+INFO [2022-08-08 08:05:06] PREDICT FIVE
+INFO [2022-08-08 08:05:06] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:06] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:08] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:08] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:05:09] PREDICT THREE
+INFO [2022-08-08 08:05:09] Words to find:  case  and  of
+INFO [2022-08-08 08:05:10] PREDICT ONE
+DEBUG [2022-08-08 08:05:10] Min.   : 309676  
+DEBUG [2022-08-08 08:05:10] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:05:10] Median : 560807  
+DEBUG [2022-08-08 08:05:10] Mean   : 573170  
+DEBUG [2022-08-08 08:05:10] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:05:10] Max.   :1178060  
+DEBUG [2022-08-08 08:05:10] Length:10         
+DEBUG [2022-08-08 08:05:10] Class :character  
+DEBUG [2022-08-08 08:05:10] Mode  :character  
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] Min.   :0.01118  
+DEBUG [2022-08-08 08:05:10] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:05:10] Median :0.02025  
+DEBUG [2022-08-08 08:05:10] Mean   :0.02069  
+DEBUG [2022-08-08 08:05:10] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:05:10] Max.   :0.04253  
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  count
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:05:10] Number of words:  27698536
+INFO [2022-08-08 08:05:10] PREDICT ONE
+DEBUG [2022-08-08 08:05:10] Min.   : 309676  
+DEBUG [2022-08-08 08:05:10] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:05:10] Median : 560807  
+DEBUG [2022-08-08 08:05:10] Mean   : 573170  
+DEBUG [2022-08-08 08:05:10] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:05:10] Max.   :1178060  
+DEBUG [2022-08-08 08:05:10] Length:10         
+DEBUG [2022-08-08 08:05:10] Class :character  
+DEBUG [2022-08-08 08:05:10] Mode  :character  
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] Min.   :0.01118  
+DEBUG [2022-08-08 08:05:10] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:05:10] Median :0.02025  
+DEBUG [2022-08-08 08:05:10] Mean   :0.02069  
+DEBUG [2022-08-08 08:05:10] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:05:10] Max.   :0.04253  
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  count
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:05:10] Number of words:  27698536
+INFO [2022-08-08 08:05:10] PREDICT ONE
+DEBUG [2022-08-08 08:05:10] Min.   : 309676  
+DEBUG [2022-08-08 08:05:10] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:05:10] Median : 560807  
+DEBUG [2022-08-08 08:05:10] Mean   : 573170  
+DEBUG [2022-08-08 08:05:10] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:05:10] Max.   :1178060  
+DEBUG [2022-08-08 08:05:10] Length:10         
+DEBUG [2022-08-08 08:05:10] Class :character  
+DEBUG [2022-08-08 08:05:10] Mode  :character  
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] Min.   :0.01118  
+DEBUG [2022-08-08 08:05:10] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:05:10] Median :0.02025  
+DEBUG [2022-08-08 08:05:10] Mean   :0.02069  
+DEBUG [2022-08-08 08:05:10] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:05:10] Max.   :0.04253  
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  count
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:05:10] Number of words:  27698536
+INFO [2022-08-08 08:05:10] PREDICT ONE
+DEBUG [2022-08-08 08:05:10] Min.   : 309676  
+DEBUG [2022-08-08 08:05:10] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:05:10] Median : 560807  
+DEBUG [2022-08-08 08:05:10] Mean   : 573170  
+DEBUG [2022-08-08 08:05:10] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:05:10] Max.   :1178060  
+DEBUG [2022-08-08 08:05:10] Length:10         
+DEBUG [2022-08-08 08:05:10] Class :character  
+DEBUG [2022-08-08 08:05:10] Mode  :character  
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] Min.   :0.01118  
+DEBUG [2022-08-08 08:05:10] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:05:10] Median :0.02025  
+DEBUG [2022-08-08 08:05:10] Mean   :0.02069  
+DEBUG [2022-08-08 08:05:10] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:05:10] Max.   :0.04253  
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  count
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:05:10] Number of words:  27698536
+INFO [2022-08-08 08:05:10] PREDICT ONE
+DEBUG [2022-08-08 08:05:10] Min.   : 309676  
+DEBUG [2022-08-08 08:05:10] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:05:10] Median : 560807  
+DEBUG [2022-08-08 08:05:10] Mean   : 573170  
+DEBUG [2022-08-08 08:05:10] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:05:10] Max.   :1178060  
+DEBUG [2022-08-08 08:05:10] Length:10         
+DEBUG [2022-08-08 08:05:10] Class :character  
+DEBUG [2022-08-08 08:05:10] Mode  :character  
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] NA
+DEBUG [2022-08-08 08:05:10] Min.   :0.01118  
+DEBUG [2022-08-08 08:05:10] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:05:10] Median :0.02025  
+DEBUG [2022-08-08 08:05:10] Mean   :0.02069  
+DEBUG [2022-08-08 08:05:10] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:05:10] Max.   :0.04253  
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  count
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:05:10] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:05:10] Number of words:  27698536
+INFO [2022-08-08 08:05:10] PREDICT FIVE
+INFO [2022-08-08 08:05:10] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:10] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:12] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:12] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:05:13] PREDICT THREE
+INFO [2022-08-08 08:05:13] Words to find:  case  and  of
+INFO [2022-08-08 08:05:14] PREDICT TWO
+INFO [2022-08-08 08:05:14] Word to find:  case
+INFO [2022-08-08 08:05:15] PREDICT TWO
+INFO [2022-08-08 08:05:15] Word to find:  case
+INFO [2022-08-08 08:05:15] PREDICT TWO
+INFO [2022-08-08 08:05:15] Word to find:  case
+INFO [2022-08-08 08:05:15] PREDICT FIVE
+INFO [2022-08-08 08:05:15] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:16] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:17] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:17] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:05:19] PREDICT ONE
+DEBUG [2022-08-08 08:05:19] Min.   : 309676  
+DEBUG [2022-08-08 08:05:19] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:05:19] Median : 560807  
+DEBUG [2022-08-08 08:05:19] Mean   : 573170  
+DEBUG [2022-08-08 08:05:19] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:05:19] Max.   :1178060  
+DEBUG [2022-08-08 08:05:19] Length:10         
+DEBUG [2022-08-08 08:05:19] Class :character  
+DEBUG [2022-08-08 08:05:19] Mode  :character  
+DEBUG [2022-08-08 08:05:19] NA
+DEBUG [2022-08-08 08:05:19] NA
+DEBUG [2022-08-08 08:05:19] NA
+DEBUG [2022-08-08 08:05:19] Min.   :0.01118  
+DEBUG [2022-08-08 08:05:19] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:05:19] Median :0.02025  
+DEBUG [2022-08-08 08:05:19] Mean   :0.02069  
+DEBUG [2022-08-08 08:05:19] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:05:19] Max.   :0.04253  
+DEBUG [2022-08-08 08:05:19] f_count_one colnames:  count
+DEBUG [2022-08-08 08:05:19] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:05:19] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:05:19] Number of words:  27698536
+INFO [2022-08-08 08:05:19] PREDICT FIVE
+INFO [2022-08-08 08:05:19] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:19] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:21] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:21] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:05:22] PREDICT FIVE
+INFO [2022-08-08 08:05:22] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:22] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:30] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:30] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:05:31] PREDICT TWO
+INFO [2022-08-08 08:05:31] Word to find:  case
+INFO [2022-08-08 08:05:32] PREDICT ONE
+DEBUG [2022-08-08 08:05:32] Min.   : 309676  
+DEBUG [2022-08-08 08:05:32] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:05:32] Median : 560807  
+DEBUG [2022-08-08 08:05:32] Mean   : 573170  
+DEBUG [2022-08-08 08:05:32] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:05:32] Max.   :1178060  
+DEBUG [2022-08-08 08:05:32] Length:10         
+DEBUG [2022-08-08 08:05:32] Class :character  
+DEBUG [2022-08-08 08:05:32] Mode  :character  
+DEBUG [2022-08-08 08:05:32] NA
+DEBUG [2022-08-08 08:05:32] NA
+DEBUG [2022-08-08 08:05:32] NA
+DEBUG [2022-08-08 08:05:32] Min.   :0.01118  
+DEBUG [2022-08-08 08:05:32] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:05:32] Median :0.02025  
+DEBUG [2022-08-08 08:05:32] Mean   :0.02069  
+DEBUG [2022-08-08 08:05:32] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:05:32] Max.   :0.04253  
+DEBUG [2022-08-08 08:05:32] f_count_one colnames:  count
+DEBUG [2022-08-08 08:05:32] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:05:32] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:05:32] Number of words:  27698536
+INFO [2022-08-08 08:05:32] PREDICT FIVE
+INFO [2022-08-08 08:05:32] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:32] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:34] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:34] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:05:35] PREDICT THREE
+INFO [2022-08-08 08:05:35] Words to find:  case  and  of
+INFO [2022-08-08 08:05:36] PREDICT TWO
+INFO [2022-08-08 08:05:36] Word to find:  case
+INFO [2022-08-08 08:05:36] PREDICT TWO
+INFO [2022-08-08 08:05:36] Word to find:  case
+INFO [2022-08-08 08:05:36] PREDICT ONE
+DEBUG [2022-08-08 08:05:36] Min.   : 309676  
+DEBUG [2022-08-08 08:05:36] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:05:36] Median : 560807  
+DEBUG [2022-08-08 08:05:36] Mean   : 573170  
+DEBUG [2022-08-08 08:05:36] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:05:36] Max.   :1178060  
+DEBUG [2022-08-08 08:05:36] Length:10         
+DEBUG [2022-08-08 08:05:36] Class :character  
+DEBUG [2022-08-08 08:05:36] Mode  :character  
+DEBUG [2022-08-08 08:05:36] NA
+DEBUG [2022-08-08 08:05:36] NA
+DEBUG [2022-08-08 08:05:36] NA
+DEBUG [2022-08-08 08:05:36] Min.   :0.01118  
+DEBUG [2022-08-08 08:05:36] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:05:36] Median :0.02025  
+DEBUG [2022-08-08 08:05:36] Mean   :0.02069  
+DEBUG [2022-08-08 08:05:36] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:05:36] Max.   :0.04253  
+DEBUG [2022-08-08 08:05:36] f_count_one colnames:  count
+DEBUG [2022-08-08 08:05:36] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:05:36] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:05:36] Number of words:  27698536
+INFO [2022-08-08 08:05:36] PREDICT THREE
+INFO [2022-08-08 08:05:37] Words to find:  case  and  of
+INFO [2022-08-08 08:05:38] PREDICT FIVE
+INFO [2022-08-08 08:05:38] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:38] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:39] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:39] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:05:40] PREDICT TWO
+INFO [2022-08-08 08:05:40] Word to find:  case
+INFO [2022-08-08 08:05:41] PREDICT FIVE
+INFO [2022-08-08 08:05:41] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:41] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:42] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:42] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:05:44] PREDICT FIVE
+INFO [2022-08-08 08:05:44] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:44] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:52] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:52] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:05:53] PREDICT THREE
+INFO [2022-08-08 08:05:53] Words to find:  case  and  of
+INFO [2022-08-08 08:05:54] PREDICT TWO
+INFO [2022-08-08 08:05:54] Word to find:  case
+INFO [2022-08-08 08:05:54] PREDICT TWO
+INFO [2022-08-08 08:05:54] Word to find:  case
+INFO [2022-08-08 08:05:54] PREDICT FIVE
+INFO [2022-08-08 08:05:54] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:54] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:56] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:56] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:05:57] PREDICT FIVE
+INFO [2022-08-08 08:05:57] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:05:57] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:05:58] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:05:58] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:00] PREDICT THREE
+INFO [2022-08-08 08:06:00] Words to find:  case  and  of
+INFO [2022-08-08 08:06:00] PREDICT FIVE
+INFO [2022-08-08 08:06:00] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:06:00] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:06:02] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:06:02] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:03] PREDICT ONE
+DEBUG [2022-08-08 08:06:03] Min.   : 309676  
+DEBUG [2022-08-08 08:06:03] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:03] Median : 560807  
+DEBUG [2022-08-08 08:06:03] Mean   : 573170  
+DEBUG [2022-08-08 08:06:03] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:03] Max.   :1178060  
+DEBUG [2022-08-08 08:06:03] Length:10         
+DEBUG [2022-08-08 08:06:03] Class :character  
+DEBUG [2022-08-08 08:06:03] Mode  :character  
+DEBUG [2022-08-08 08:06:03] NA
+DEBUG [2022-08-08 08:06:03] NA
+DEBUG [2022-08-08 08:06:03] NA
+DEBUG [2022-08-08 08:06:03] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:03] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:03] Median :0.02025  
+DEBUG [2022-08-08 08:06:03] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:03] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:03] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:03] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:03] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:03] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:03] Number of words:  27698536
+INFO [2022-08-08 08:06:03] PREDICT FIVE
+INFO [2022-08-08 08:06:03] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:06:03] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:06:05] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:06:05] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:13] PREDICT ONE
+DEBUG [2022-08-08 08:06:13] Min.   : 309676  
+DEBUG [2022-08-08 08:06:13] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:13] Median : 560807  
+DEBUG [2022-08-08 08:06:13] Mean   : 573170  
+DEBUG [2022-08-08 08:06:13] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:13] Max.   :1178060  
+DEBUG [2022-08-08 08:06:13] Length:10         
+DEBUG [2022-08-08 08:06:13] Class :character  
+DEBUG [2022-08-08 08:06:13] Mode  :character  
+DEBUG [2022-08-08 08:06:13] NA
+DEBUG [2022-08-08 08:06:13] NA
+DEBUG [2022-08-08 08:06:13] NA
+DEBUG [2022-08-08 08:06:13] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:13] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:13] Median :0.02025  
+DEBUG [2022-08-08 08:06:13] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:13] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:13] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:13] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:13] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:13] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:13] Number of words:  27698536
+INFO [2022-08-08 08:06:13] PREDICT FIVE
+INFO [2022-08-08 08:06:13] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:06:13] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:06:15] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:06:15] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:17] PREDICT TWO
+INFO [2022-08-08 08:06:17] Word to find:  case
+INFO [2022-08-08 08:06:17] PREDICT ONE
+DEBUG [2022-08-08 08:06:17] Min.   : 309676  
+DEBUG [2022-08-08 08:06:17] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:17] Median : 560807  
+DEBUG [2022-08-08 08:06:17] Mean   : 573170  
+DEBUG [2022-08-08 08:06:17] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:17] Max.   :1178060  
+DEBUG [2022-08-08 08:06:17] Length:10         
+DEBUG [2022-08-08 08:06:17] Class :character  
+DEBUG [2022-08-08 08:06:17] Mode  :character  
+DEBUG [2022-08-08 08:06:17] NA
+DEBUG [2022-08-08 08:06:17] NA
+DEBUG [2022-08-08 08:06:17] NA
+DEBUG [2022-08-08 08:06:17] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:17] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:17] Median :0.02025  
+DEBUG [2022-08-08 08:06:17] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:17] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:17] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:17] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:17] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:17] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:17] Number of words:  27698536
+INFO [2022-08-08 08:06:17] PREDICT THREE
+INFO [2022-08-08 08:06:17] Words to find:  case  and  of
+INFO [2022-08-08 08:06:18] PREDICT THREE
+INFO [2022-08-08 08:06:18] Words to find:  case  and  of
+INFO [2022-08-08 08:06:19] PREDICT ONE
+DEBUG [2022-08-08 08:06:19] Min.   : 309676  
+DEBUG [2022-08-08 08:06:19] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:19] Median : 560807  
+DEBUG [2022-08-08 08:06:19] Mean   : 573170  
+DEBUG [2022-08-08 08:06:19] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:19] Max.   :1178060  
+DEBUG [2022-08-08 08:06:19] Length:10         
+DEBUG [2022-08-08 08:06:19] Class :character  
+DEBUG [2022-08-08 08:06:19] Mode  :character  
+DEBUG [2022-08-08 08:06:19] NA
+DEBUG [2022-08-08 08:06:19] NA
+DEBUG [2022-08-08 08:06:19] NA
+DEBUG [2022-08-08 08:06:19] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:19] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:19] Median :0.02025  
+DEBUG [2022-08-08 08:06:19] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:19] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:19] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:19] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:19] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:19] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:19] Number of words:  27698536
+INFO [2022-08-08 08:06:19] PREDICT FIVE
+INFO [2022-08-08 08:06:19] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:06:19] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:06:21] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:06:21] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:22] PREDICT ONE
+DEBUG [2022-08-08 08:06:22] Min.   : 309676  
+DEBUG [2022-08-08 08:06:22] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:22] Median : 560807  
+DEBUG [2022-08-08 08:06:22] Mean   : 573170  
+DEBUG [2022-08-08 08:06:22] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:22] Max.   :1178060  
+DEBUG [2022-08-08 08:06:22] Length:10         
+DEBUG [2022-08-08 08:06:22] Class :character  
+DEBUG [2022-08-08 08:06:22] Mode  :character  
+DEBUG [2022-08-08 08:06:22] NA
+DEBUG [2022-08-08 08:06:22] NA
+DEBUG [2022-08-08 08:06:22] NA
+DEBUG [2022-08-08 08:06:22] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:22] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:22] Median :0.02025  
+DEBUG [2022-08-08 08:06:22] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:22] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:22] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:22] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:22] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:22] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:22] Number of words:  27698536
+INFO [2022-08-08 08:06:22] PREDICT THREE
+INFO [2022-08-08 08:06:22] Words to find:  case  and  of
+INFO [2022-08-08 08:06:23] PREDICT TWO
+INFO [2022-08-08 08:06:23] Word to find:  case
+INFO [2022-08-08 08:06:23] PREDICT ONE
+DEBUG [2022-08-08 08:06:23] Min.   : 309676  
+DEBUG [2022-08-08 08:06:23] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:23] Median : 560807  
+DEBUG [2022-08-08 08:06:23] Mean   : 573170  
+DEBUG [2022-08-08 08:06:23] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:23] Max.   :1178060  
+DEBUG [2022-08-08 08:06:23] Length:10         
+DEBUG [2022-08-08 08:06:23] Class :character  
+DEBUG [2022-08-08 08:06:23] Mode  :character  
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:23] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:23] Median :0.02025  
+DEBUG [2022-08-08 08:06:23] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:23] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:23] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:23] Number of words:  27698536
+INFO [2022-08-08 08:06:23] PREDICT TWO
+INFO [2022-08-08 08:06:23] Word to find:  case
+INFO [2022-08-08 08:06:23] PREDICT ONE
+DEBUG [2022-08-08 08:06:23] Min.   : 309676  
+DEBUG [2022-08-08 08:06:23] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:23] Median : 560807  
+DEBUG [2022-08-08 08:06:23] Mean   : 573170  
+DEBUG [2022-08-08 08:06:23] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:23] Max.   :1178060  
+DEBUG [2022-08-08 08:06:23] Length:10         
+DEBUG [2022-08-08 08:06:23] Class :character  
+DEBUG [2022-08-08 08:06:23] Mode  :character  
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:23] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:23] Median :0.02025  
+DEBUG [2022-08-08 08:06:23] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:23] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:23] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:23] Number of words:  27698536
+INFO [2022-08-08 08:06:23] PREDICT ONE
+DEBUG [2022-08-08 08:06:23] Min.   : 309676  
+DEBUG [2022-08-08 08:06:23] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:23] Median : 560807  
+DEBUG [2022-08-08 08:06:23] Mean   : 573170  
+DEBUG [2022-08-08 08:06:23] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:23] Max.   :1178060  
+DEBUG [2022-08-08 08:06:23] Length:10         
+DEBUG [2022-08-08 08:06:23] Class :character  
+DEBUG [2022-08-08 08:06:23] Mode  :character  
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:23] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:23] Median :0.02025  
+DEBUG [2022-08-08 08:06:23] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:23] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:23] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:23] Number of words:  27698536
+INFO [2022-08-08 08:06:23] PREDICT ONE
+DEBUG [2022-08-08 08:06:23] Min.   : 309676  
+DEBUG [2022-08-08 08:06:23] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:23] Median : 560807  
+DEBUG [2022-08-08 08:06:23] Mean   : 573170  
+DEBUG [2022-08-08 08:06:23] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:23] Max.   :1178060  
+DEBUG [2022-08-08 08:06:23] Length:10         
+DEBUG [2022-08-08 08:06:23] Class :character  
+DEBUG [2022-08-08 08:06:23] Mode  :character  
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] NA
+DEBUG [2022-08-08 08:06:23] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:23] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:23] Median :0.02025  
+DEBUG [2022-08-08 08:06:23] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:23] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:23] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:23] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:23] Number of words:  27698536
+INFO [2022-08-08 08:06:23] PREDICT FIVE
+INFO [2022-08-08 08:06:23] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:06:23] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:06:25] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:06:25] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:26] PREDICT FIVE
+INFO [2022-08-08 08:06:26] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:06:26] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:06:35] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:06:35] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:37] PREDICT THREE
+INFO [2022-08-08 08:06:37] Words to find:  case  and  of
+INFO [2022-08-08 08:06:38] PREDICT THREE
+INFO [2022-08-08 08:06:38] Words to find:  case  and  of
+INFO [2022-08-08 08:06:38] PREDICT TWO
+INFO [2022-08-08 08:06:38] Word to find:  case
+INFO [2022-08-08 08:06:39] PREDICT ONE
+DEBUG [2022-08-08 08:06:39] Min.   : 309676  
+DEBUG [2022-08-08 08:06:39] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:39] Median : 560807  
+DEBUG [2022-08-08 08:06:39] Mean   : 573170  
+DEBUG [2022-08-08 08:06:39] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:39] Max.   :1178060  
+DEBUG [2022-08-08 08:06:39] Length:10         
+DEBUG [2022-08-08 08:06:39] Class :character  
+DEBUG [2022-08-08 08:06:39] Mode  :character  
+DEBUG [2022-08-08 08:06:39] NA
+DEBUG [2022-08-08 08:06:39] NA
+DEBUG [2022-08-08 08:06:39] NA
+DEBUG [2022-08-08 08:06:39] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:39] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:39] Median :0.02025  
+DEBUG [2022-08-08 08:06:39] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:39] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:39] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:39] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:39] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:39] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:39] Number of words:  27698536
+INFO [2022-08-08 08:06:39] PREDICT FIVE
+INFO [2022-08-08 08:06:39] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:06:39] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:06:41] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:06:41] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:42] PREDICT TWO
+INFO [2022-08-08 08:06:42] Word to find:  case
+INFO [2022-08-08 08:06:43] PREDICT FIVE
+INFO [2022-08-08 08:06:43] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:06:43] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:06:44] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:06:44] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:46] PREDICT TWO
+INFO [2022-08-08 08:06:46] Word to find:  case
+INFO [2022-08-08 08:06:46] PREDICT THREE
+INFO [2022-08-08 08:06:46] Words to find:  case  and  of
+INFO [2022-08-08 08:06:47] PREDICT ONE
+DEBUG [2022-08-08 08:06:47] Min.   : 309676  
+DEBUG [2022-08-08 08:06:47] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:47] Median : 560807  
+DEBUG [2022-08-08 08:06:47] Mean   : 573170  
+DEBUG [2022-08-08 08:06:47] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:47] Max.   :1178060  
+DEBUG [2022-08-08 08:06:47] Length:10         
+DEBUG [2022-08-08 08:06:47] Class :character  
+DEBUG [2022-08-08 08:06:47] Mode  :character  
+DEBUG [2022-08-08 08:06:47] NA
+DEBUG [2022-08-08 08:06:47] NA
+DEBUG [2022-08-08 08:06:47] NA
+DEBUG [2022-08-08 08:06:47] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:47] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:47] Median :0.02025  
+DEBUG [2022-08-08 08:06:47] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:47] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:47] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:47] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:47] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:47] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:47] Number of words:  27698536
+INFO [2022-08-08 08:06:47] PREDICT ONE
+DEBUG [2022-08-08 08:06:47] Min.   : 309676  
+DEBUG [2022-08-08 08:06:47] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:06:47] Median : 560807  
+DEBUG [2022-08-08 08:06:47] Mean   : 573170  
+DEBUG [2022-08-08 08:06:47] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:06:47] Max.   :1178060  
+DEBUG [2022-08-08 08:06:47] Length:10         
+DEBUG [2022-08-08 08:06:47] Class :character  
+DEBUG [2022-08-08 08:06:47] Mode  :character  
+DEBUG [2022-08-08 08:06:47] NA
+DEBUG [2022-08-08 08:06:47] NA
+DEBUG [2022-08-08 08:06:47] NA
+DEBUG [2022-08-08 08:06:47] Min.   :0.01118  
+DEBUG [2022-08-08 08:06:47] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:06:47] Median :0.02025  
+DEBUG [2022-08-08 08:06:47] Mean   :0.02069  
+DEBUG [2022-08-08 08:06:47] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:06:47] Max.   :0.04253  
+DEBUG [2022-08-08 08:06:47] f_count_one colnames:  count
+DEBUG [2022-08-08 08:06:47] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:06:47] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:06:47] Number of words:  27698536
+INFO [2022-08-08 08:06:47] PREDICT FIVE
+INFO [2022-08-08 08:06:47] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:06:47] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:06:48] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:06:48] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:56] PREDICT FIVE
+INFO [2022-08-08 08:06:56] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:06:56] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:06:58] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:06:58] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:06:59] PREDICT TWO
+INFO [2022-08-08 08:06:59] Word to find:  case
+INFO [2022-08-08 08:06:59] PREDICT THREE
+INFO [2022-08-08 08:06:59] Words to find:  case  and  of
+INFO [2022-08-08 08:07:00] PREDICT TWO
+INFO [2022-08-08 08:07:00] Word to find:  case
+INFO [2022-08-08 08:07:00] PREDICT THREE
+INFO [2022-08-08 08:07:00] Words to find:  case  and  of
+INFO [2022-08-08 08:07:01] PREDICT FIVE
+INFO [2022-08-08 08:07:01] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:07:01] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:07:03] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:07:03] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:07:04] PREDICT TWO
+INFO [2022-08-08 08:07:04] Word to find:  case
+INFO [2022-08-08 08:07:04] PREDICT TWO
+INFO [2022-08-08 08:07:04] Word to find:  case
+INFO [2022-08-08 08:07:05] PREDICT THREE
+INFO [2022-08-08 08:07:05] Words to find:  case  and  of
+INFO [2022-08-08 08:07:05] PREDICT FIVE
+INFO [2022-08-08 08:07:05] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:07:05] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:07:07] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:07:07] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:07:15] PREDICT FIVE
+INFO [2022-08-08 08:07:15] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:07:15] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:07:17] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:07:17] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:07:18] PREDICT THREE
+INFO [2022-08-08 08:07:18] Words to find:  case  and  of
+INFO [2022-08-08 08:07:19] PREDICT ONE
+DEBUG [2022-08-08 08:07:19] Min.   : 309676  
+DEBUG [2022-08-08 08:07:19] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:07:19] Median : 560807  
+DEBUG [2022-08-08 08:07:19] Mean   : 573170  
+DEBUG [2022-08-08 08:07:19] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:07:19] Max.   :1178060  
+DEBUG [2022-08-08 08:07:19] Length:10         
+DEBUG [2022-08-08 08:07:19] Class :character  
+DEBUG [2022-08-08 08:07:19] Mode  :character  
+DEBUG [2022-08-08 08:07:19] NA
+DEBUG [2022-08-08 08:07:19] NA
+DEBUG [2022-08-08 08:07:19] NA
+DEBUG [2022-08-08 08:07:19] Min.   :0.01118  
+DEBUG [2022-08-08 08:07:19] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:07:19] Median :0.02025  
+DEBUG [2022-08-08 08:07:19] Mean   :0.02069  
+DEBUG [2022-08-08 08:07:19] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:07:19] Max.   :0.04253  
+DEBUG [2022-08-08 08:07:19] f_count_one colnames:  count
+DEBUG [2022-08-08 08:07:19] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:07:19] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:07:19] Number of words:  27698536
+INFO [2022-08-08 08:07:19] PREDICT ONE
+DEBUG [2022-08-08 08:07:19] Min.   : 309676  
+DEBUG [2022-08-08 08:07:19] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:07:19] Median : 560807  
+DEBUG [2022-08-08 08:07:19] Mean   : 573170  
+DEBUG [2022-08-08 08:07:19] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:07:19] Max.   :1178060  
+DEBUG [2022-08-08 08:07:19] Length:10         
+DEBUG [2022-08-08 08:07:19] Class :character  
+DEBUG [2022-08-08 08:07:19] Mode  :character  
+DEBUG [2022-08-08 08:07:19] NA
+DEBUG [2022-08-08 08:07:19] NA
+DEBUG [2022-08-08 08:07:19] NA
+DEBUG [2022-08-08 08:07:19] Min.   :0.01118  
+DEBUG [2022-08-08 08:07:19] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:07:19] Median :0.02025  
+DEBUG [2022-08-08 08:07:19] Mean   :0.02069  
+DEBUG [2022-08-08 08:07:19] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:07:19] Max.   :0.04253  
+DEBUG [2022-08-08 08:07:19] f_count_one colnames:  count
+DEBUG [2022-08-08 08:07:19] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:07:19] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:07:19] Number of words:  27698536
+INFO [2022-08-08 08:07:19] PREDICT THREE
+INFO [2022-08-08 08:07:19] Words to find:  case  and  of
+INFO [2022-08-08 08:07:20] PREDICT THREE
+INFO [2022-08-08 08:07:20] Words to find:  case  and  of
+INFO [2022-08-08 08:07:21] PREDICT THREE
+INFO [2022-08-08 08:07:21] Words to find:  case  and  of
+INFO [2022-08-08 08:07:21] PREDICT FIVE
+INFO [2022-08-08 08:07:21] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:07:21] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:07:23] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:07:23] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:07:24] PREDICT ONE
+DEBUG [2022-08-08 08:07:24] Min.   : 309676  
+DEBUG [2022-08-08 08:07:24] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:07:24] Median : 560807  
+DEBUG [2022-08-08 08:07:24] Mean   : 573170  
+DEBUG [2022-08-08 08:07:24] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:07:24] Max.   :1178060  
+DEBUG [2022-08-08 08:07:24] Length:10         
+DEBUG [2022-08-08 08:07:24] Class :character  
+DEBUG [2022-08-08 08:07:24] Mode  :character  
+DEBUG [2022-08-08 08:07:24] NA
+DEBUG [2022-08-08 08:07:24] NA
+DEBUG [2022-08-08 08:07:24] NA
+DEBUG [2022-08-08 08:07:24] Min.   :0.01118  
+DEBUG [2022-08-08 08:07:24] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:07:24] Median :0.02025  
+DEBUG [2022-08-08 08:07:24] Mean   :0.02069  
+DEBUG [2022-08-08 08:07:24] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:07:24] Max.   :0.04253  
+DEBUG [2022-08-08 08:07:24] f_count_one colnames:  count
+DEBUG [2022-08-08 08:07:24] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:07:24] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:07:24] Number of words:  27698536
+INFO [2022-08-08 08:07:24] PREDICT THREE
+INFO [2022-08-08 08:07:24] Words to find:  case  and  of
+INFO [2022-08-08 08:07:25] PREDICT TWO
+INFO [2022-08-08 08:07:25] Word to find:  case
+INFO [2022-08-08 08:07:25] PREDICT ONE
+DEBUG [2022-08-08 08:07:25] Min.   : 309676  
+DEBUG [2022-08-08 08:07:25] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:07:25] Median : 560807  
+DEBUG [2022-08-08 08:07:25] Mean   : 573170  
+DEBUG [2022-08-08 08:07:25] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:07:25] Max.   :1178060  
+DEBUG [2022-08-08 08:07:25] Length:10         
+DEBUG [2022-08-08 08:07:25] Class :character  
+DEBUG [2022-08-08 08:07:25] Mode  :character  
+DEBUG [2022-08-08 08:07:25] NA
+DEBUG [2022-08-08 08:07:25] NA
+DEBUG [2022-08-08 08:07:25] NA
+DEBUG [2022-08-08 08:07:25] Min.   :0.01118  
+DEBUG [2022-08-08 08:07:25] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:07:25] Median :0.02025  
+DEBUG [2022-08-08 08:07:25] Mean   :0.02069  
+DEBUG [2022-08-08 08:07:25] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:07:25] Max.   :0.04253  
+DEBUG [2022-08-08 08:07:25] f_count_one colnames:  count
+DEBUG [2022-08-08 08:07:25] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:07:25] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:07:25] Number of words:  27698536
+INFO [2022-08-08 08:07:25] PREDICT FIVE
+INFO [2022-08-08 08:07:25] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:07:25] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:07:34] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:07:34] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:07:36] PREDICT FIVE
+INFO [2022-08-08 08:07:36] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:07:36] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:07:37] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:07:37] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:07:38] PREDICT THREE
+INFO [2022-08-08 08:07:38] Words to find:  case  and  of
+INFO [2022-08-08 08:07:39] PREDICT FIVE
+INFO [2022-08-08 08:07:39] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:07:39] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:07:41] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:07:41] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:07:42] PREDICT FIVE
+INFO [2022-08-08 08:07:42] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:07:42] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:07:44] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:07:44] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:07:45] PREDICT ONE
+DEBUG [2022-08-08 08:07:45] Min.   : 309676  
+DEBUG [2022-08-08 08:07:45] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:07:45] Median : 560807  
+DEBUG [2022-08-08 08:07:45] Mean   : 573170  
+DEBUG [2022-08-08 08:07:45] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:07:45] Max.   :1178060  
+DEBUG [2022-08-08 08:07:45] Length:10         
+DEBUG [2022-08-08 08:07:45] Class :character  
+DEBUG [2022-08-08 08:07:45] Mode  :character  
+DEBUG [2022-08-08 08:07:45] NA
+DEBUG [2022-08-08 08:07:45] NA
+DEBUG [2022-08-08 08:07:45] NA
+DEBUG [2022-08-08 08:07:45] Min.   :0.01118  
+DEBUG [2022-08-08 08:07:45] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:07:45] Median :0.02025  
+DEBUG [2022-08-08 08:07:45] Mean   :0.02069  
+DEBUG [2022-08-08 08:07:45] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:07:45] Max.   :0.04253  
+DEBUG [2022-08-08 08:07:45] f_count_one colnames:  count
+DEBUG [2022-08-08 08:07:45] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:07:45] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:07:45] Number of words:  27698536
+INFO [2022-08-08 08:07:45] PREDICT TWO
+INFO [2022-08-08 08:07:45] Word to find:  case
+INFO [2022-08-08 08:07:52] PREDICT TWO
+INFO [2022-08-08 08:07:52] Word to find:  case
+INFO [2022-08-08 08:07:53] PREDICT TWO
+INFO [2022-08-08 08:07:53] Word to find:  case
+INFO [2022-08-08 08:07:53] PREDICT THREE
+INFO [2022-08-08 08:07:53] Words to find:  case  and  of
+INFO [2022-08-08 08:07:54] PREDICT FIVE
+INFO [2022-08-08 08:07:54] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:07:54] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:07:56] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:07:56] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:07:57] PREDICT THREE
+INFO [2022-08-08 08:07:57] Words to find:  case  and  of
+INFO [2022-08-08 08:07:58] PREDICT TWO
+INFO [2022-08-08 08:07:58] Word to find:  case
+INFO [2022-08-08 08:07:58] PREDICT ONE
+DEBUG [2022-08-08 08:07:58] Min.   : 309676  
+DEBUG [2022-08-08 08:07:58] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:07:58] Median : 560807  
+DEBUG [2022-08-08 08:07:58] Mean   : 573170  
+DEBUG [2022-08-08 08:07:58] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:07:58] Max.   :1178060  
+DEBUG [2022-08-08 08:07:58] Length:10         
+DEBUG [2022-08-08 08:07:58] Class :character  
+DEBUG [2022-08-08 08:07:58] Mode  :character  
+DEBUG [2022-08-08 08:07:58] NA
+DEBUG [2022-08-08 08:07:58] NA
+DEBUG [2022-08-08 08:07:58] NA
+DEBUG [2022-08-08 08:07:58] Min.   :0.01118  
+DEBUG [2022-08-08 08:07:58] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:07:58] Median :0.02025  
+DEBUG [2022-08-08 08:07:58] Mean   :0.02069  
+DEBUG [2022-08-08 08:07:58] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:07:58] Max.   :0.04253  
+DEBUG [2022-08-08 08:07:58] f_count_one colnames:  count
+DEBUG [2022-08-08 08:07:58] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:07:58] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:07:58] Number of words:  27698536
+INFO [2022-08-08 08:07:58] PREDICT TWO
+INFO [2022-08-08 08:07:58] Word to find:  case
+INFO [2022-08-08 08:07:58] PREDICT THREE
+INFO [2022-08-08 08:07:58] Words to find:  case  and  of
+INFO [2022-08-08 08:07:59] PREDICT FIVE
+INFO [2022-08-08 08:07:59] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:07:59] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:08:01] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:08:01] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:08:02] PREDICT TWO
+INFO [2022-08-08 08:08:02] Word to find:  case
+INFO [2022-08-08 08:08:02] PREDICT FIVE
+INFO [2022-08-08 08:08:02] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:08:02] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:08:04] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:08:04] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:08:05] PREDICT TWO
+INFO [2022-08-08 08:08:05] Word to find:  case
+INFO [2022-08-08 08:08:06] PREDICT THREE
+INFO [2022-08-08 08:08:06] Words to find:  case  and  of
+INFO [2022-08-08 08:08:06] PREDICT TWO
+INFO [2022-08-08 08:08:06] Word to find:  case
+INFO [2022-08-08 08:08:07] PREDICT THREE
+INFO [2022-08-08 08:08:07] Words to find:  case  and  of
+INFO [2022-08-08 08:08:07] PREDICT ONE
+DEBUG [2022-08-08 08:08:07] Min.   : 309676  
+DEBUG [2022-08-08 08:08:07] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:08:07] Median : 560807  
+DEBUG [2022-08-08 08:08:07] Mean   : 573170  
+DEBUG [2022-08-08 08:08:07] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:08:07] Max.   :1178060  
+DEBUG [2022-08-08 08:08:07] Length:10         
+DEBUG [2022-08-08 08:08:07] Class :character  
+DEBUG [2022-08-08 08:08:07] Mode  :character  
+DEBUG [2022-08-08 08:08:07] NA
+DEBUG [2022-08-08 08:08:07] NA
+DEBUG [2022-08-08 08:08:07] NA
+DEBUG [2022-08-08 08:08:07] Min.   :0.01118  
+DEBUG [2022-08-08 08:08:07] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:08:07] Median :0.02025  
+DEBUG [2022-08-08 08:08:07] Mean   :0.02069  
+DEBUG [2022-08-08 08:08:07] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:08:07] Max.   :0.04253  
+DEBUG [2022-08-08 08:08:07] f_count_one colnames:  count
+DEBUG [2022-08-08 08:08:07] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:08:07] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:08:07] Number of words:  27698536
+INFO [2022-08-08 08:08:07] PREDICT TWO
+INFO [2022-08-08 08:08:07] Word to find:  case
+INFO [2022-08-08 08:08:08] PREDICT THREE
+INFO [2022-08-08 08:08:08] Words to find:  case  and  of
+INFO [2022-08-08 08:08:16] PREDICT THREE
+INFO [2022-08-08 08:08:16] Words to find:  case  and  of
+INFO [2022-08-08 08:08:17] PREDICT ONE
+DEBUG [2022-08-08 08:08:17] Min.   : 309676  
+DEBUG [2022-08-08 08:08:17] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:08:17] Median : 560807  
+DEBUG [2022-08-08 08:08:17] Mean   : 573170  
+DEBUG [2022-08-08 08:08:17] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:08:17] Max.   :1178060  
+DEBUG [2022-08-08 08:08:17] Length:10         
+DEBUG [2022-08-08 08:08:17] Class :character  
+DEBUG [2022-08-08 08:08:17] Mode  :character  
+DEBUG [2022-08-08 08:08:17] NA
+DEBUG [2022-08-08 08:08:17] NA
+DEBUG [2022-08-08 08:08:17] NA
+DEBUG [2022-08-08 08:08:17] Min.   :0.01118  
+DEBUG [2022-08-08 08:08:17] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:08:17] Median :0.02025  
+DEBUG [2022-08-08 08:08:17] Mean   :0.02069  
+DEBUG [2022-08-08 08:08:17] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:08:17] Max.   :0.04253  
+DEBUG [2022-08-08 08:08:17] f_count_one colnames:  count
+DEBUG [2022-08-08 08:08:17] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:08:17] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:08:17] Number of words:  27698536
+INFO [2022-08-08 08:08:17] PREDICT THREE
+INFO [2022-08-08 08:08:17] Words to find:  case  and  of
+INFO [2022-08-08 08:08:17] PREDICT TWO
+INFO [2022-08-08 08:08:17] Word to find:  case
+INFO [2022-08-08 08:08:18] PREDICT THREE
+INFO [2022-08-08 08:08:18] Words to find:  case  and  of
+INFO [2022-08-08 08:08:18] PREDICT FIVE
+INFO [2022-08-08 08:08:18] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:08:18] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:08:20] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:08:20] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:08:21] PREDICT THREE
+INFO [2022-08-08 08:08:21] Words to find:  case  and  of
+INFO [2022-08-08 08:08:22] PREDICT ONE
+DEBUG [2022-08-08 08:08:22] Min.   : 309676  
+DEBUG [2022-08-08 08:08:22] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:08:22] Median : 560807  
+DEBUG [2022-08-08 08:08:22] Mean   : 573170  
+DEBUG [2022-08-08 08:08:22] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:08:22] Max.   :1178060  
+DEBUG [2022-08-08 08:08:22] Length:10         
+DEBUG [2022-08-08 08:08:22] Class :character  
+DEBUG [2022-08-08 08:08:22] Mode  :character  
+DEBUG [2022-08-08 08:08:22] NA
+DEBUG [2022-08-08 08:08:22] NA
+DEBUG [2022-08-08 08:08:22] NA
+DEBUG [2022-08-08 08:08:22] Min.   :0.01118  
+DEBUG [2022-08-08 08:08:22] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:08:22] Median :0.02025  
+DEBUG [2022-08-08 08:08:22] Mean   :0.02069  
+DEBUG [2022-08-08 08:08:22] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:08:22] Max.   :0.04253  
+DEBUG [2022-08-08 08:08:22] f_count_one colnames:  count
+DEBUG [2022-08-08 08:08:22] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:08:22] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:08:22] Number of words:  27698536
+INFO [2022-08-08 08:08:22] PREDICT FIVE
+INFO [2022-08-08 08:08:22] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:08:22] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:08:24] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:08:24] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:08:25] PREDICT TWO
+INFO [2022-08-08 08:08:25] Word to find:  case
+INFO [2022-08-08 08:08:25] PREDICT FIVE
+INFO [2022-08-08 08:08:25] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:08:25] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:08:27] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:08:27] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:08:28] PREDICT ONE
+DEBUG [2022-08-08 08:08:28] Min.   : 309676  
+DEBUG [2022-08-08 08:08:28] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:08:28] Median : 560807  
+DEBUG [2022-08-08 08:08:28] Mean   : 573170  
+DEBUG [2022-08-08 08:08:28] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:08:28] Max.   :1178060  
+DEBUG [2022-08-08 08:08:28] Length:10         
+DEBUG [2022-08-08 08:08:28] Class :character  
+DEBUG [2022-08-08 08:08:28] Mode  :character  
+DEBUG [2022-08-08 08:08:28] NA
+DEBUG [2022-08-08 08:08:28] NA
+DEBUG [2022-08-08 08:08:28] NA
+DEBUG [2022-08-08 08:08:28] Min.   :0.01118  
+DEBUG [2022-08-08 08:08:28] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:08:28] Median :0.02025  
+DEBUG [2022-08-08 08:08:28] Mean   :0.02069  
+DEBUG [2022-08-08 08:08:28] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:08:28] Max.   :0.04253  
+DEBUG [2022-08-08 08:08:28] f_count_one colnames:  count
+DEBUG [2022-08-08 08:08:28] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:08:28] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:08:28] Number of words:  27698536
+INFO [2022-08-08 08:08:28] PREDICT TWO
+INFO [2022-08-08 08:08:28] Word to find:  case
+INFO [2022-08-08 08:08:28] PREDICT THREE
+INFO [2022-08-08 08:08:28] Words to find:  case  and  of
+INFO [2022-08-08 08:08:29] PREDICT TWO
+INFO [2022-08-08 08:08:29] Word to find:  case
+INFO [2022-08-08 08:08:29] PREDICT ONE
+DEBUG [2022-08-08 08:08:29] Min.   : 309676  
+DEBUG [2022-08-08 08:08:29] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:08:29] Median : 560807  
+DEBUG [2022-08-08 08:08:29] Mean   : 573170  
+DEBUG [2022-08-08 08:08:29] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:08:29] Max.   :1178060  
+DEBUG [2022-08-08 08:08:29] Length:10         
+DEBUG [2022-08-08 08:08:29] Class :character  
+DEBUG [2022-08-08 08:08:29] Mode  :character  
+DEBUG [2022-08-08 08:08:29] NA
+DEBUG [2022-08-08 08:08:29] NA
+DEBUG [2022-08-08 08:08:29] NA
+DEBUG [2022-08-08 08:08:29] Min.   :0.01118  
+DEBUG [2022-08-08 08:08:29] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:08:29] Median :0.02025  
+DEBUG [2022-08-08 08:08:29] Mean   :0.02069  
+DEBUG [2022-08-08 08:08:29] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:08:29] Max.   :0.04253  
+DEBUG [2022-08-08 08:08:29] f_count_one colnames:  count
+DEBUG [2022-08-08 08:08:29] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:08:29] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:08:29] Number of words:  27698536
+INFO [2022-08-08 08:08:29] PREDICT ONE
+DEBUG [2022-08-08 08:08:29] Min.   : 309676  
+DEBUG [2022-08-08 08:08:29] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:08:29] Median : 560807  
+DEBUG [2022-08-08 08:08:29] Mean   : 573170  
+DEBUG [2022-08-08 08:08:29] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:08:29] Max.   :1178060  
+DEBUG [2022-08-08 08:08:29] Length:10         
+DEBUG [2022-08-08 08:08:29] Class :character  
+DEBUG [2022-08-08 08:08:29] Mode  :character  
+DEBUG [2022-08-08 08:08:29] NA
+DEBUG [2022-08-08 08:08:29] NA
+DEBUG [2022-08-08 08:08:29] NA
+DEBUG [2022-08-08 08:08:29] Min.   :0.01118  
+DEBUG [2022-08-08 08:08:29] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:08:29] Median :0.02025  
+DEBUG [2022-08-08 08:08:29] Mean   :0.02069  
+DEBUG [2022-08-08 08:08:29] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:08:29] Max.   :0.04253  
+DEBUG [2022-08-08 08:08:29] f_count_one colnames:  count
+DEBUG [2022-08-08 08:08:29] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:08:29] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:08:29] Number of words:  27698536
+INFO [2022-08-08 08:08:29] PREDICT FIVE
+INFO [2022-08-08 08:08:29] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:08:29] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:08:39] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:08:39] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:08:40] PREDICT TWO
+INFO [2022-08-08 08:08:40] Word to find:  case
+INFO [2022-08-08 08:08:41] PREDICT TWO
+INFO [2022-08-08 08:08:41] Word to find:  case
+INFO [2022-08-08 08:08:41] PREDICT FIVE
+INFO [2022-08-08 08:08:41] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:08:41] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:08:43] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:08:43] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:08:44] PREDICT FIVE
+INFO [2022-08-08 08:08:44] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:08:44] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:08:45] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:08:45] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:08:46] PREDICT THREE
+INFO [2022-08-08 08:08:46] Words to find:  case  and  of
+INFO [2022-08-08 08:08:47] PREDICT ONE
+DEBUG [2022-08-08 08:08:47] Min.   : 309676  
+DEBUG [2022-08-08 08:08:47] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:08:47] Median : 560807  
+DEBUG [2022-08-08 08:08:47] Mean   : 573170  
+DEBUG [2022-08-08 08:08:47] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:08:47] Max.   :1178060  
+DEBUG [2022-08-08 08:08:47] Length:10         
+DEBUG [2022-08-08 08:08:47] Class :character  
+DEBUG [2022-08-08 08:08:47] Mode  :character  
+DEBUG [2022-08-08 08:08:47] NA
+DEBUG [2022-08-08 08:08:47] NA
+DEBUG [2022-08-08 08:08:47] NA
+DEBUG [2022-08-08 08:08:47] Min.   :0.01118  
+DEBUG [2022-08-08 08:08:47] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:08:47] Median :0.02025  
+DEBUG [2022-08-08 08:08:47] Mean   :0.02069  
+DEBUG [2022-08-08 08:08:47] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:08:47] Max.   :0.04253  
+DEBUG [2022-08-08 08:08:47] f_count_one colnames:  count
+DEBUG [2022-08-08 08:08:47] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:08:47] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:08:47] Number of words:  27698536
+INFO [2022-08-08 08:08:47] PREDICT ONE
+DEBUG [2022-08-08 08:08:47] Min.   : 309676  
+DEBUG [2022-08-08 08:08:47] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:08:47] Median : 560807  
+DEBUG [2022-08-08 08:08:47] Mean   : 573170  
+DEBUG [2022-08-08 08:08:47] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:08:47] Max.   :1178060  
+DEBUG [2022-08-08 08:08:47] Length:10         
+DEBUG [2022-08-08 08:08:47] Class :character  
+DEBUG [2022-08-08 08:08:47] Mode  :character  
+DEBUG [2022-08-08 08:08:47] NA
+DEBUG [2022-08-08 08:08:47] NA
+DEBUG [2022-08-08 08:08:47] NA
+DEBUG [2022-08-08 08:08:47] Min.   :0.01118  
+DEBUG [2022-08-08 08:08:47] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:08:47] Median :0.02025  
+DEBUG [2022-08-08 08:08:47] Mean   :0.02069  
+DEBUG [2022-08-08 08:08:47] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:08:47] Max.   :0.04253  
+DEBUG [2022-08-08 08:08:47] f_count_one colnames:  count
+DEBUG [2022-08-08 08:08:47] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:08:47] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:08:47] Number of words:  27698536
+INFO [2022-08-08 08:08:47] PREDICT FIVE
+INFO [2022-08-08 08:08:47] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:08:47] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:08:49] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:08:49] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:08:50] PREDICT FIVE
+INFO [2022-08-08 08:08:50] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:08:50] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:08:52] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:08:52] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:08:53] PREDICT ONE
+DEBUG [2022-08-08 08:08:53] Min.   : 309676  
+DEBUG [2022-08-08 08:08:53] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:08:53] Median : 560807  
+DEBUG [2022-08-08 08:08:53] Mean   : 573170  
+DEBUG [2022-08-08 08:08:53] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:08:53] Max.   :1178060  
+DEBUG [2022-08-08 08:08:53] Length:10         
+DEBUG [2022-08-08 08:08:53] Class :character  
+DEBUG [2022-08-08 08:08:53] Mode  :character  
+DEBUG [2022-08-08 08:08:53] NA
+DEBUG [2022-08-08 08:08:53] NA
+DEBUG [2022-08-08 08:08:53] NA
+DEBUG [2022-08-08 08:08:53] Min.   :0.01118  
+DEBUG [2022-08-08 08:08:53] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:08:53] Median :0.02025  
+DEBUG [2022-08-08 08:08:53] Mean   :0.02069  
+DEBUG [2022-08-08 08:08:53] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:08:53] Max.   :0.04253  
+DEBUG [2022-08-08 08:08:53] f_count_one colnames:  count
+DEBUG [2022-08-08 08:08:53] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:08:53] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:08:53] Number of words:  27698536
+INFO [2022-08-08 08:08:53] PREDICT THREE
+INFO [2022-08-08 08:08:53] Words to find:  case  and  of
+INFO [2022-08-08 08:08:54] PREDICT FIVE
+INFO [2022-08-08 08:08:54] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:08:54] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:09:03] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:09:03] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:09:05] PREDICT THREE
+INFO [2022-08-08 08:09:05] Words to find:  case  and  of
+INFO [2022-08-08 08:09:06] PREDICT TWO
+INFO [2022-08-08 08:09:06] Word to find:  case
+INFO [2022-08-08 08:09:07] PREDICT FIVE
+INFO [2022-08-08 08:09:07] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:09:07] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:09:09] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:09:09] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:09:10] PREDICT THREE
+INFO [2022-08-08 08:09:10] Words to find:  case  and  of
+INFO [2022-08-08 08:09:11] PREDICT ONE
+DEBUG [2022-08-08 08:09:11] Min.   : 309676  
+DEBUG [2022-08-08 08:09:11] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:09:11] Median : 560807  
+DEBUG [2022-08-08 08:09:11] Mean   : 573170  
+DEBUG [2022-08-08 08:09:11] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:09:11] Max.   :1178060  
+DEBUG [2022-08-08 08:09:11] Length:10         
+DEBUG [2022-08-08 08:09:11] Class :character  
+DEBUG [2022-08-08 08:09:11] Mode  :character  
+DEBUG [2022-08-08 08:09:11] NA
+DEBUG [2022-08-08 08:09:11] NA
+DEBUG [2022-08-08 08:09:11] NA
+DEBUG [2022-08-08 08:09:11] Min.   :0.01118  
+DEBUG [2022-08-08 08:09:11] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:09:11] Median :0.02025  
+DEBUG [2022-08-08 08:09:11] Mean   :0.02069  
+DEBUG [2022-08-08 08:09:11] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:09:11] Max.   :0.04253  
+DEBUG [2022-08-08 08:09:11] f_count_one colnames:  count
+DEBUG [2022-08-08 08:09:11] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:09:11] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:09:11] Number of words:  27698536
+INFO [2022-08-08 08:09:11] PREDICT ONE
+DEBUG [2022-08-08 08:09:11] Min.   : 309676  
+DEBUG [2022-08-08 08:09:11] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:09:11] Median : 560807  
+DEBUG [2022-08-08 08:09:11] Mean   : 573170  
+DEBUG [2022-08-08 08:09:11] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:09:11] Max.   :1178060  
+DEBUG [2022-08-08 08:09:11] Length:10         
+DEBUG [2022-08-08 08:09:11] Class :character  
+DEBUG [2022-08-08 08:09:11] Mode  :character  
+DEBUG [2022-08-08 08:09:11] NA
+DEBUG [2022-08-08 08:09:11] NA
+DEBUG [2022-08-08 08:09:11] NA
+DEBUG [2022-08-08 08:09:11] Min.   :0.01118  
+DEBUG [2022-08-08 08:09:11] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:09:11] Median :0.02025  
+DEBUG [2022-08-08 08:09:11] Mean   :0.02069  
+DEBUG [2022-08-08 08:09:11] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:09:11] Max.   :0.04253  
+DEBUG [2022-08-08 08:09:11] f_count_one colnames:  count
+DEBUG [2022-08-08 08:09:11] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:09:11] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:09:11] Number of words:  27698536
+INFO [2022-08-08 08:09:11] PREDICT ONE
+DEBUG [2022-08-08 08:09:11] Min.   : 309676  
+DEBUG [2022-08-08 08:09:11] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:09:11] Median : 560807  
+DEBUG [2022-08-08 08:09:11] Mean   : 573170  
+DEBUG [2022-08-08 08:09:11] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:09:11] Max.   :1178060  
+DEBUG [2022-08-08 08:09:11] Length:10         
+DEBUG [2022-08-08 08:09:11] Class :character  
+DEBUG [2022-08-08 08:09:11] Mode  :character  
+DEBUG [2022-08-08 08:09:11] NA
+DEBUG [2022-08-08 08:09:11] NA
+DEBUG [2022-08-08 08:09:11] NA
+DEBUG [2022-08-08 08:09:11] Min.   :0.01118  
+DEBUG [2022-08-08 08:09:11] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:09:11] Median :0.02025  
+DEBUG [2022-08-08 08:09:11] Mean   :0.02069  
+DEBUG [2022-08-08 08:09:11] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:09:11] Max.   :0.04253  
+DEBUG [2022-08-08 08:09:11] f_count_one colnames:  count
+DEBUG [2022-08-08 08:09:11] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:09:11] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:09:11] Number of words:  27698536
+INFO [2022-08-08 08:09:11] PREDICT FIVE
+INFO [2022-08-08 08:09:11] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:09:11] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:09:13] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:09:13] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:09:14] PREDICT ONE
+DEBUG [2022-08-08 08:09:14] Min.   : 309676  
+DEBUG [2022-08-08 08:09:14] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:09:14] Median : 560807  
+DEBUG [2022-08-08 08:09:14] Mean   : 573170  
+DEBUG [2022-08-08 08:09:14] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:09:14] Max.   :1178060  
+DEBUG [2022-08-08 08:09:14] Length:10         
+DEBUG [2022-08-08 08:09:14] Class :character  
+DEBUG [2022-08-08 08:09:14] Mode  :character  
+DEBUG [2022-08-08 08:09:14] NA
+DEBUG [2022-08-08 08:09:14] NA
+DEBUG [2022-08-08 08:09:14] NA
+DEBUG [2022-08-08 08:09:14] Min.   :0.01118  
+DEBUG [2022-08-08 08:09:14] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:09:14] Median :0.02025  
+DEBUG [2022-08-08 08:09:14] Mean   :0.02069  
+DEBUG [2022-08-08 08:09:14] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:09:14] Max.   :0.04253  
+DEBUG [2022-08-08 08:09:14] f_count_one colnames:  count
+DEBUG [2022-08-08 08:09:14] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:09:14] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:09:14] Number of words:  27698536
+INFO [2022-08-08 08:09:14] PREDICT FIVE
+INFO [2022-08-08 08:09:14] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:09:14] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:09:16] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:09:16] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:09:17] PREDICT FIVE
+INFO [2022-08-08 08:09:17] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:09:17] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:09:30] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:09:30] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:09:32] PREDICT TWO
+INFO [2022-08-08 08:09:32] Word to find:  case
+INFO [2022-08-08 08:09:32] PREDICT THREE
+INFO [2022-08-08 08:09:32] Words to find:  case  and  of
+INFO [2022-08-08 08:09:33] PREDICT FIVE
+INFO [2022-08-08 08:09:33] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:09:33] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:09:35] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:09:35] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:09:36] PREDICT ONE
+DEBUG [2022-08-08 08:09:36] Min.   : 309676  
+DEBUG [2022-08-08 08:09:36] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:09:36] Median : 560807  
+DEBUG [2022-08-08 08:09:36] Mean   : 573170  
+DEBUG [2022-08-08 08:09:36] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:09:36] Max.   :1178060  
+DEBUG [2022-08-08 08:09:36] Length:10         
+DEBUG [2022-08-08 08:09:36] Class :character  
+DEBUG [2022-08-08 08:09:36] Mode  :character  
+DEBUG [2022-08-08 08:09:36] NA
+DEBUG [2022-08-08 08:09:36] NA
+DEBUG [2022-08-08 08:09:36] NA
+DEBUG [2022-08-08 08:09:36] Min.   :0.01118  
+DEBUG [2022-08-08 08:09:36] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:09:36] Median :0.02025  
+DEBUG [2022-08-08 08:09:36] Mean   :0.02069  
+DEBUG [2022-08-08 08:09:36] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:09:36] Max.   :0.04253  
+DEBUG [2022-08-08 08:09:36] f_count_one colnames:  count
+DEBUG [2022-08-08 08:09:36] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:09:36] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:09:36] Number of words:  27698536
+INFO [2022-08-08 08:09:36] PREDICT ONE
+DEBUG [2022-08-08 08:09:36] Min.   : 309676  
+DEBUG [2022-08-08 08:09:36] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:09:36] Median : 560807  
+DEBUG [2022-08-08 08:09:36] Mean   : 573170  
+DEBUG [2022-08-08 08:09:36] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:09:36] Max.   :1178060  
+DEBUG [2022-08-08 08:09:36] Length:10         
+DEBUG [2022-08-08 08:09:36] Class :character  
+DEBUG [2022-08-08 08:09:36] Mode  :character  
+DEBUG [2022-08-08 08:09:36] NA
+DEBUG [2022-08-08 08:09:36] NA
+DEBUG [2022-08-08 08:09:36] NA
+DEBUG [2022-08-08 08:09:36] Min.   :0.01118  
+DEBUG [2022-08-08 08:09:36] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:09:36] Median :0.02025  
+DEBUG [2022-08-08 08:09:36] Mean   :0.02069  
+DEBUG [2022-08-08 08:09:36] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:09:36] Max.   :0.04253  
+DEBUG [2022-08-08 08:09:36] f_count_one colnames:  count
+DEBUG [2022-08-08 08:09:36] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:09:36] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:09:36] Number of words:  27698536
+INFO [2022-08-08 08:09:36] PREDICT TWO
+INFO [2022-08-08 08:09:36] Word to find:  case
+INFO [2022-08-08 08:09:36] PREDICT TWO
+INFO [2022-08-08 08:09:36] Word to find:  case
+INFO [2022-08-08 08:09:37] PREDICT THREE
+INFO [2022-08-08 08:09:37] Words to find:  case  and  of
+INFO [2022-08-08 08:09:37] PREDICT ONE
+DEBUG [2022-08-08 08:09:37] Min.   : 309676  
+DEBUG [2022-08-08 08:09:37] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:09:37] Median : 560807  
+DEBUG [2022-08-08 08:09:37] Mean   : 573170  
+DEBUG [2022-08-08 08:09:37] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:09:37] Max.   :1178060  
+DEBUG [2022-08-08 08:09:37] Length:10         
+DEBUG [2022-08-08 08:09:37] Class :character  
+DEBUG [2022-08-08 08:09:37] Mode  :character  
+DEBUG [2022-08-08 08:09:37] NA
+DEBUG [2022-08-08 08:09:37] NA
+DEBUG [2022-08-08 08:09:37] NA
+DEBUG [2022-08-08 08:09:37] Min.   :0.01118  
+DEBUG [2022-08-08 08:09:37] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:09:37] Median :0.02025  
+DEBUG [2022-08-08 08:09:37] Mean   :0.02069  
+DEBUG [2022-08-08 08:09:37] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:09:37] Max.   :0.04253  
+DEBUG [2022-08-08 08:09:37] f_count_one colnames:  count
+DEBUG [2022-08-08 08:09:37] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:09:37] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:09:37] Number of words:  27698536
+INFO [2022-08-08 08:09:37] PREDICT FIVE
+INFO [2022-08-08 08:09:37] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:09:37] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:09:39] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:09:39] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:09:40] PREDICT THREE
+INFO [2022-08-08 08:09:40] Words to find:  case  and  of
+INFO [2022-08-08 08:09:41] PREDICT THREE
+INFO [2022-08-08 08:09:41] Words to find:  case  and  of
+INFO [2022-08-08 08:09:42] PREDICT TWO
+INFO [2022-08-08 08:09:42] Word to find:  case
+INFO [2022-08-08 08:09:42] PREDICT TWO
+INFO [2022-08-08 08:09:42] Word to find:  case
+INFO [2022-08-08 08:09:42] PREDICT THREE
+INFO [2022-08-08 08:09:42] Words to find:  case  and  of
+INFO [2022-08-08 08:09:43] PREDICT THREE
+INFO [2022-08-08 08:09:43] Words to find:  case  and  of
+INFO [2022-08-08 08:09:44] PREDICT THREE
+INFO [2022-08-08 08:09:44] Words to find:  case  and  of
+INFO [2022-08-08 08:09:45] PREDICT TWO
+INFO [2022-08-08 08:09:45] Word to find:  case
+INFO [2022-08-08 08:09:45] PREDICT ONE
+DEBUG [2022-08-08 08:09:45] Min.   : 309676  
+DEBUG [2022-08-08 08:09:45] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:09:45] Median : 560807  
+DEBUG [2022-08-08 08:09:45] Mean   : 573170  
+DEBUG [2022-08-08 08:09:45] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:09:45] Max.   :1178060  
+DEBUG [2022-08-08 08:09:45] Length:10         
+DEBUG [2022-08-08 08:09:45] Class :character  
+DEBUG [2022-08-08 08:09:45] Mode  :character  
+DEBUG [2022-08-08 08:09:45] NA
+DEBUG [2022-08-08 08:09:45] NA
+DEBUG [2022-08-08 08:09:45] NA
+DEBUG [2022-08-08 08:09:45] Min.   :0.01118  
+DEBUG [2022-08-08 08:09:45] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:09:45] Median :0.02025  
+DEBUG [2022-08-08 08:09:45] Mean   :0.02069  
+DEBUG [2022-08-08 08:09:45] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:09:45] Max.   :0.04253  
+DEBUG [2022-08-08 08:09:45] f_count_one colnames:  count
+DEBUG [2022-08-08 08:09:45] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:09:45] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:09:45] Number of words:  27698536
+INFO [2022-08-08 08:09:45] PREDICT THREE
+INFO [2022-08-08 08:09:45] Words to find:  case  and  of
+INFO [2022-08-08 08:09:46] PREDICT FIVE
+INFO [2022-08-08 08:09:46] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:09:46] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:09:55] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:09:55] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:09:56] PREDICT ONE
+DEBUG [2022-08-08 08:09:56] Min.   : 309676  
+DEBUG [2022-08-08 08:09:56] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:09:56] Median : 560807  
+DEBUG [2022-08-08 08:09:56] Mean   : 573170  
+DEBUG [2022-08-08 08:09:56] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:09:56] Max.   :1178060  
+DEBUG [2022-08-08 08:09:56] Length:10         
+DEBUG [2022-08-08 08:09:56] Class :character  
+DEBUG [2022-08-08 08:09:56] Mode  :character  
+DEBUG [2022-08-08 08:09:56] NA
+DEBUG [2022-08-08 08:09:56] NA
+DEBUG [2022-08-08 08:09:56] NA
+DEBUG [2022-08-08 08:09:56] Min.   :0.01118  
+DEBUG [2022-08-08 08:09:56] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:09:56] Median :0.02025  
+DEBUG [2022-08-08 08:09:56] Mean   :0.02069  
+DEBUG [2022-08-08 08:09:56] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:09:56] Max.   :0.04253  
+DEBUG [2022-08-08 08:09:56] f_count_one colnames:  count
+DEBUG [2022-08-08 08:09:56] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:09:56] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:09:56] Number of words:  27698536
+INFO [2022-08-08 08:09:56] PREDICT TWO
+INFO [2022-08-08 08:09:56] Word to find:  case
+INFO [2022-08-08 08:09:57] PREDICT ONE
+DEBUG [2022-08-08 08:09:57] Min.   : 309676  
+DEBUG [2022-08-08 08:09:57] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:09:57] Median : 560807  
+DEBUG [2022-08-08 08:09:57] Mean   : 573170  
+DEBUG [2022-08-08 08:09:57] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:09:57] Max.   :1178060  
+DEBUG [2022-08-08 08:09:57] Length:10         
+DEBUG [2022-08-08 08:09:57] Class :character  
+DEBUG [2022-08-08 08:09:57] Mode  :character  
+DEBUG [2022-08-08 08:09:57] NA
+DEBUG [2022-08-08 08:09:57] NA
+DEBUG [2022-08-08 08:09:57] NA
+DEBUG [2022-08-08 08:09:57] Min.   :0.01118  
+DEBUG [2022-08-08 08:09:57] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:09:57] Median :0.02025  
+DEBUG [2022-08-08 08:09:57] Mean   :0.02069  
+DEBUG [2022-08-08 08:09:57] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:09:57] Max.   :0.04253  
+DEBUG [2022-08-08 08:09:57] f_count_one colnames:  count
+DEBUG [2022-08-08 08:09:57] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:09:57] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:09:57] Number of words:  27698536
+INFO [2022-08-08 08:09:57] PREDICT FIVE
+INFO [2022-08-08 08:09:57] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:09:57] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:09:58] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:09:58] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:10:00] PREDICT TWO
+INFO [2022-08-08 08:10:00] Word to find:  case
+INFO [2022-08-08 08:10:00] PREDICT ONE
+DEBUG [2022-08-08 08:10:00] Min.   : 309676  
+DEBUG [2022-08-08 08:10:00] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:10:00] Median : 560807  
+DEBUG [2022-08-08 08:10:00] Mean   : 573170  
+DEBUG [2022-08-08 08:10:00] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:10:00] Max.   :1178060  
+DEBUG [2022-08-08 08:10:00] Length:10         
+DEBUG [2022-08-08 08:10:00] Class :character  
+DEBUG [2022-08-08 08:10:00] Mode  :character  
+DEBUG [2022-08-08 08:10:00] NA
+DEBUG [2022-08-08 08:10:00] NA
+DEBUG [2022-08-08 08:10:00] NA
+DEBUG [2022-08-08 08:10:00] Min.   :0.01118  
+DEBUG [2022-08-08 08:10:00] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:10:00] Median :0.02025  
+DEBUG [2022-08-08 08:10:00] Mean   :0.02069  
+DEBUG [2022-08-08 08:10:00] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:10:00] Max.   :0.04253  
+DEBUG [2022-08-08 08:10:00] f_count_one colnames:  count
+DEBUG [2022-08-08 08:10:00] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:10:00] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:10:00] Number of words:  27698536
+INFO [2022-08-08 08:10:00] PREDICT THREE
+INFO [2022-08-08 08:10:00] Words to find:  case  and  of
+INFO [2022-08-08 08:10:01] PREDICT FIVE
+INFO [2022-08-08 08:10:01] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:10:01] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:10:03] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:10:03] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:10:04] PREDICT TWO
+INFO [2022-08-08 08:10:04] Word to find:  case
+INFO [2022-08-08 08:10:05] PREDICT TWO
+INFO [2022-08-08 08:10:05] Word to find:  case
+INFO [2022-08-08 08:10:05] PREDICT ONE
+DEBUG [2022-08-08 08:10:05] Min.   : 309676  
+DEBUG [2022-08-08 08:10:05] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:10:05] Median : 560807  
+DEBUG [2022-08-08 08:10:05] Mean   : 573170  
+DEBUG [2022-08-08 08:10:05] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:10:05] Max.   :1178060  
+DEBUG [2022-08-08 08:10:05] Length:10         
+DEBUG [2022-08-08 08:10:05] Class :character  
+DEBUG [2022-08-08 08:10:05] Mode  :character  
+DEBUG [2022-08-08 08:10:05] NA
+DEBUG [2022-08-08 08:10:05] NA
+DEBUG [2022-08-08 08:10:05] NA
+DEBUG [2022-08-08 08:10:05] Min.   :0.01118  
+DEBUG [2022-08-08 08:10:05] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:10:05] Median :0.02025  
+DEBUG [2022-08-08 08:10:05] Mean   :0.02069  
+DEBUG [2022-08-08 08:10:05] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:10:05] Max.   :0.04253  
+DEBUG [2022-08-08 08:10:05] f_count_one colnames:  count
+DEBUG [2022-08-08 08:10:05] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:10:05] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:10:05] Number of words:  27698536
+INFO [2022-08-08 08:10:05] PREDICT TWO
+INFO [2022-08-08 08:10:05] Word to find:  case
+INFO [2022-08-08 08:10:06] PREDICT THREE
+INFO [2022-08-08 08:10:06] Words to find:  case  and  of
+INFO [2022-08-08 08:10:07] PREDICT TWO
+INFO [2022-08-08 08:10:07] Word to find:  case
+INFO [2022-08-08 08:10:07] PREDICT TWO
+INFO [2022-08-08 08:10:07] Word to find:  case
+INFO [2022-08-08 08:10:07] PREDICT THREE
+INFO [2022-08-08 08:10:07] Words to find:  case  and  of
+INFO [2022-08-08 08:10:08] PREDICT ONE
+DEBUG [2022-08-08 08:10:08] Min.   : 309676  
+DEBUG [2022-08-08 08:10:08] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:10:08] Median : 560807  
+DEBUG [2022-08-08 08:10:08] Mean   : 573170  
+DEBUG [2022-08-08 08:10:08] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:10:08] Max.   :1178060  
+DEBUG [2022-08-08 08:10:08] Length:10         
+DEBUG [2022-08-08 08:10:08] Class :character  
+DEBUG [2022-08-08 08:10:08] Mode  :character  
+DEBUG [2022-08-08 08:10:08] NA
+DEBUG [2022-08-08 08:10:08] NA
+DEBUG [2022-08-08 08:10:08] NA
+DEBUG [2022-08-08 08:10:08] Min.   :0.01118  
+DEBUG [2022-08-08 08:10:08] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:10:08] Median :0.02025  
+DEBUG [2022-08-08 08:10:08] Mean   :0.02069  
+DEBUG [2022-08-08 08:10:08] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:10:08] Max.   :0.04253  
+DEBUG [2022-08-08 08:10:08] f_count_one colnames:  count
+DEBUG [2022-08-08 08:10:08] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:10:08] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:10:08] Number of words:  27698536
+INFO [2022-08-08 08:10:08] PREDICT ONE
+DEBUG [2022-08-08 08:10:08] Min.   : 309676  
+DEBUG [2022-08-08 08:10:08] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:10:08] Median : 560807  
+DEBUG [2022-08-08 08:10:08] Mean   : 573170  
+DEBUG [2022-08-08 08:10:08] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:10:08] Max.   :1178060  
+DEBUG [2022-08-08 08:10:08] Length:10         
+DEBUG [2022-08-08 08:10:08] Class :character  
+DEBUG [2022-08-08 08:10:08] Mode  :character  
+DEBUG [2022-08-08 08:10:08] NA
+DEBUG [2022-08-08 08:10:08] NA
+DEBUG [2022-08-08 08:10:08] NA
+DEBUG [2022-08-08 08:10:08] Min.   :0.01118  
+DEBUG [2022-08-08 08:10:08] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:10:08] Median :0.02025  
+DEBUG [2022-08-08 08:10:08] Mean   :0.02069  
+DEBUG [2022-08-08 08:10:08] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:10:08] Max.   :0.04253  
+DEBUG [2022-08-08 08:10:08] f_count_one colnames:  count
+DEBUG [2022-08-08 08:10:08] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:10:08] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:10:08] Number of words:  27698536
+INFO [2022-08-08 08:10:08] PREDICT THREE
+INFO [2022-08-08 08:10:08] Words to find:  case  and  of
+INFO [2022-08-08 08:10:09] PREDICT THREE
+INFO [2022-08-08 08:10:09] Words to find:  case  and  of
+INFO [2022-08-08 08:10:10] PREDICT TWO
+INFO [2022-08-08 08:10:10] Word to find:  case
+INFO [2022-08-08 08:10:10] PREDICT ONE
+DEBUG [2022-08-08 08:10:10] Min.   : 309676  
+DEBUG [2022-08-08 08:10:10] 1st Qu.: 359006  
+DEBUG [2022-08-08 08:10:10] Median : 560807  
+DEBUG [2022-08-08 08:10:10] Mean   : 573170  
+DEBUG [2022-08-08 08:10:10] 3rd Qu.: 637816  
+DEBUG [2022-08-08 08:10:10] Max.   :1178060  
+DEBUG [2022-08-08 08:10:10] Length:10         
+DEBUG [2022-08-08 08:10:10] Class :character  
+DEBUG [2022-08-08 08:10:10] Mode  :character  
+DEBUG [2022-08-08 08:10:10] NA
+DEBUG [2022-08-08 08:10:10] NA
+DEBUG [2022-08-08 08:10:10] NA
+DEBUG [2022-08-08 08:10:10] Min.   :0.01118  
+DEBUG [2022-08-08 08:10:10] 1st Qu.:0.01296  
+DEBUG [2022-08-08 08:10:10] Median :0.02025  
+DEBUG [2022-08-08 08:10:10] Mean   :0.02069  
+DEBUG [2022-08-08 08:10:10] 3rd Qu.:0.02303  
+DEBUG [2022-08-08 08:10:10] Max.   :0.04253  
+DEBUG [2022-08-08 08:10:10] f_count_one colnames:  count
+DEBUG [2022-08-08 08:10:10] f_count_one colnames:  first_word
+DEBUG [2022-08-08 08:10:10] f_count_one colnames:  prob
+DEBUG [2022-08-08 08:10:10] Number of words:  27698536
+INFO [2022-08-08 08:19:45] PREDICT FIVE
+INFO [2022-08-08 08:19:45] Words to find: ' bring ', ' a ', ' case ' and ' of '.
+DEBUG [2022-08-08 08:19:45] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:19:54] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:19:54] Words to find: ' a ', ' case ' and ' of '.
+INFO [2022-08-08 08:20:45] PREDICT FIVE
+INFO [2022-08-08 08:20:45] Words to find: ' it ', ' would ', ' mean ' and ' the '.
+DEBUG [2022-08-08 08:20:45] ...Get list of matching 5-gram phrases starting with all four words
+INFO [2022-08-08 08:21:21] PREDICT FIVE
+INFO [2022-08-08 08:21:21] Words to find: ' and ', ' make ', ' me ' and ' the '.
+DEBUG [2022-08-08 08:21:21] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:21:23] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:21:23] Words to find: ' make ', ' me ' and ' the '.
+INFO [2022-08-08 08:22:04] PREDICT FIVE
+INFO [2022-08-08 08:22:04] Words to find: ' still ', ' struggling ', ' but ' and ' the '.
+DEBUG [2022-08-08 08:22:04] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:22:05] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:22:05] Words to find: ' struggling ', ' but ' and ' the '.
+DEBUG [2022-08-08 08:22:07] Need more matches -- Go to 3-grams
+DEBUG [2022-08-08 08:22:07] Words to find: ' but ' and ' the '.
+INFO [2022-08-08 08:22:56] PREDICT FIVE
+INFO [2022-08-08 08:22:56] Words to find: ' romantic ', ' date ', ' at ' and ' the '.
+DEBUG [2022-08-08 08:22:56] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:22:58] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:22:58] Words to find: ' date ', ' at ' and ' the '.
+INFO [2022-08-08 08:23:48] PREDICT FIVE
+INFO [2022-08-08 08:23:48] Words to find: ' and ', ' be ', ' on ' and ' the '.
+DEBUG [2022-08-08 08:23:48] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:23:57] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:23:57] Words to find: ' be ', ' on ' and ' the '.
+INFO [2022-08-08 08:24:08] PREDICT FIVE
+INFO [2022-08-08 08:24:08] Words to find: ' and ', ' be ', ' on ' and ' my '.
+DEBUG [2022-08-08 08:24:08] ...Get list of matching 5-gram phrases starting with all four words
+INFO [2022-08-08 08:24:37] PREDICT FIVE
+INFO [2022-08-08 08:24:37] Words to find: ' it ', ' in ', ' quite ' and ' some '.
+DEBUG [2022-08-08 08:24:37] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:24:38] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:24:38] Words to find: ' in ', ' quite ' and ' some '.
+DEBUG [2022-08-08 08:24:40] Need more matches -- Go to 3-grams
+DEBUG [2022-08-08 08:24:40] Words to find: ' quite ' and ' some '.
+INFO [2022-08-08 08:25:38] PREDICT FIVE
+INFO [2022-08-08 08:25:38] Words to find: ' eyes ', ' with ', ' his ' and ' little '.
+DEBUG [2022-08-08 08:25:38] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:25:40] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:25:40] Words to find: ' with ', ' his ' and ' little '.
+INFO [2022-08-08 08:26:37] PREDICT FIVE
+INFO [2022-08-08 08:26:37] Words to find: ' the ', ' faith ', ' during ' and ' the '.
+DEBUG [2022-08-08 08:26:37] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:26:39] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:26:39] Words to find: ' faith ', ' during ' and ' the '.
+DEBUG [2022-08-08 08:26:40] Need more matches -- Go to 3-grams
+DEBUG [2022-08-08 08:26:40] Words to find: ' during ' and ' the '.
+INFO [2022-08-08 08:28:05] PREDICT FIVE
+INFO [2022-08-08 08:28:05] Words to find: ' then ', ' you ', ' must ' and ' be '.
+DEBUG [2022-08-08 08:28:05] ...Get list of matching 5-gram phrases starting with all four words
+INFO [2022-08-08 08:30:12] PREDICT FIVE
+INFO [2022-08-08 08:30:12] Words to find: ' then ', ' you ', ' must ' and ' be '.
+DEBUG [2022-08-08 08:30:12] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:30:13] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:30:13] Words to find: ' you ', ' must ' and ' be '.
+INFO [2022-08-08 08:30:58] PREDICT FIVE
+INFO [2022-08-08 08:30:58] Words to find: ' the ', ' faith ', ' during ' and ' the '.
+DEBUG [2022-08-08 08:30:58] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:31:00] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:31:00] Words to find: ' faith ', ' during ' and ' the '.
+DEBUG [2022-08-08 08:31:01] Need more matches -- Go to 3-grams
+DEBUG [2022-08-08 08:31:01] Words to find: ' during ' and ' the '.
+INFO [2022-08-08 08:31:21] PREDICT FIVE
+INFO [2022-08-08 08:31:21] Words to find: ' eyes ', ' with ', ' his ' and ' little '.
+DEBUG [2022-08-08 08:31:21] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:31:22] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:31:22] Words to find: ' with ', ' his ' and ' little '.
+INFO [2022-08-08 08:31:54] PREDICT FIVE
+INFO [2022-08-08 08:31:54] Words to find: ' romantic ', ' date ', ' at ' and ' the '.
+DEBUG [2022-08-08 08:31:54] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:31:56] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:31:56] Words to find: ' date ', ' at ' and ' the '.
+INFO [2022-08-08 08:32:29] PREDICT FIVE
+INFO [2022-08-08 08:32:29] Words to find: ' still ', ' struggling ', ' but ' and ' the '.
+DEBUG [2022-08-08 08:32:29] ...Get list of matching 5-gram phrases starting with all four words
+DEBUG [2022-08-08 08:32:39] Need more matches -- Go to 4-grams
+DEBUG [2022-08-08 08:32:39] Words to find: ' struggling ', ' but ' and ' the '.
+DEBUG [2022-08-08 08:32:40] Need more matches -- Go to 3-grams
+DEBUG [2022-08-08 08:32:40] Words to find: ' but ' and ' the '.

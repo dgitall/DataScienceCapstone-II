@@ -1212,6 +1212,8 @@ main <- function(loggingTreshold = INFO,
 }
 
 # models <-
+#     main(loggingTreshold = DEBUG, logFile = 'MarkovLog.txt', "ALL")
+# models <-
 #     main(loggingTreshold = DEBUG, logFile = 'MarkovLog.txt', "ONE")
 # models <-
 #     main(loggingTreshold = DEBUG, logFile = 'MarkovLog.txt', "TWO")

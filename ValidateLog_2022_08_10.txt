@@ -1,0 +1,203 @@
+INFO [2022-08-09 07:09:20] START VALIDATING THE SIMPLE MODELS
+INFO [2022-08-09 07:09:20] ----------------------------------
+INFO [2022-08-09 07:09:20] LOADING SIMPLE MODELS
+INFO [2022-08-09 07:16:34] PREPARE DATA
+INFO [2022-08-09 07:16:36]    ...testing data file:  Data\final\en_US\prod-testing.txt
+INFO [2022-08-09 07:16:37]    ...Profanity list loaded
+INFO [2022-08-09 07:16:37]    ...read and tokenize file
+INFO [2022-08-09 07:38:23]    ...Finished preparing file
+INFO [2022-08-09 07:38:23]    ...breaking up columns
+INFO [2022-08-09 07:48:52] START VALIDATING
+INFO [2022-08-09 07:48:52] Number of rows:  5518610
+INFO [2022-08-09 07:48:52] Number of 5-grams:  5645061
+INFO [2022-08-09 09:24:10] Interation:  1000
+INFO [2022-08-09 09:24:10]            cum_count =  1134
+INFO [2022-08-09 09:24:10]            word1_error =  970
+INFO [2022-08-09 09:24:10]            word2_error =  904
+INFO [2022-08-09 09:24:10]            word3_error =  855
+INFO [2022-08-09 09:24:10]            word5_error =  819
+INFO [2022-08-09 09:24:10]            word1_error_weighted =  1104
+INFO [2022-08-09 09:24:10]            word2_error_weighted =  1003
+INFO [2022-08-09 09:24:10]            word3_error_weighted =  917
+INFO [2022-08-09 09:24:10]            word5_error_weighted =  848
+INFO [2022-08-09 09:24:10]            word1_error_any =  911
+INFO [2022-08-09 09:24:10]            word2_error_any =  793
+INFO [2022-08-09 09:24:10]            word3_error_any =  704
+INFO [2022-08-09 09:24:10]            word5_error_any =  672
+INFO [2022-08-09 09:24:10]            word1_error_any_weighted =  1018
+INFO [2022-08-09 09:24:10]            word2_error_any_weighted =  876
+INFO [2022-08-09 09:24:10]            word3_error_any_weighted =  745
+INFO [2022-08-09 09:24:10]            word5_error_any_weighted =  692
+INFO [2022-08-09 10:49:16] Interation:  2000
+INFO [2022-08-09 10:49:16]            cum_count =  2418
+INFO [2022-08-09 10:49:16]            word1_error =  1943
+INFO [2022-08-09 10:49:16]            word2_error =  1809
+INFO [2022-08-09 10:49:16]            word3_error =  1706
+INFO [2022-08-09 10:49:16]            word5_error =  1649
+INFO [2022-08-09 10:49:16]            word1_error_weighted =  2348
+INFO [2022-08-09 10:49:16]            word2_error_weighted =  2108
+INFO [2022-08-09 10:49:16]            word3_error_weighted =  1870
+INFO [2022-08-09 10:49:16]            word5_error_weighted =  1715
+INFO [2022-08-09 10:49:16]            word1_error_any =  1802
+INFO [2022-08-09 10:49:16]            word2_error_any =  1577
+INFO [2022-08-09 10:49:16]            word3_error_any =  1401
+INFO [2022-08-09 10:49:16]            word5_error_any =  1354
+INFO [2022-08-09 10:49:16]            word1_error_any_weighted =  2159
+INFO [2022-08-09 10:49:16]            word2_error_any_weighted =  1791
+INFO [2022-08-09 10:49:16]            word3_error_any_weighted =  1493
+INFO [2022-08-09 10:49:16]            word5_error_any_weighted =  1385
+INFO [2022-08-09 12:10:06] Interation:  3000
+INFO [2022-08-09 12:10:06]            cum_count =  3590
+INFO [2022-08-09 12:10:06]            word1_error =  2899
+INFO [2022-08-09 12:10:06]            word2_error =  2703
+INFO [2022-08-09 12:10:06]            word3_error =  2561
+INFO [2022-08-09 12:10:06]            word5_error =  2485
+INFO [2022-08-09 12:10:06]            word1_error_weighted =  3470
+INFO [2022-08-09 12:10:06]            word2_error_weighted =  3094
+INFO [2022-08-09 12:10:06]            word3_error_weighted =  2781
+INFO [2022-08-09 12:10:06]            word5_error_weighted =  2584
+INFO [2022-08-09 12:10:06]            word1_error_any =  2685
+INFO [2022-08-09 12:10:06]            word2_error_any =  2341
+INFO [2022-08-09 12:10:06]            word3_error_any =  2103
+INFO [2022-08-09 12:10:06]            word5_error_any =  2045
+INFO [2022-08-09 12:10:06]            word1_error_any_weighted =  3167
+INFO [2022-08-09 12:10:06]            word2_error_any_weighted =  2617
+INFO [2022-08-09 12:10:06]            word3_error_any_weighted =  2223
+INFO [2022-08-09 12:10:06]            word5_error_any_weighted =  2093
+INFO [2022-08-09 13:28:00] Interation:  4000
+INFO [2022-08-09 13:28:00]            cum_count =  4705
+INFO [2022-08-09 13:28:00]            word1_error =  3865
+INFO [2022-08-09 13:28:00]            word2_error =  3594
+INFO [2022-08-09 13:28:00]            word3_error =  3425
+INFO [2022-08-09 13:28:00]            word5_error =  3344
+INFO [2022-08-09 13:28:00]            word1_error_weighted =  4551
+INFO [2022-08-09 13:28:00]            word2_error_weighted =  4071
+INFO [2022-08-09 13:28:00]            word3_error_weighted =  3680
+INFO [2022-08-09 13:28:00]            word5_error_weighted =  3470
+INFO [2022-08-09 13:28:00]            word1_error_any =  3556
+INFO [2022-08-09 13:28:00]            word2_error_any =  3090
+INFO [2022-08-09 13:28:00]            word3_error_any =  2810
+INFO [2022-08-09 13:28:00]            word5_error_any =  2751
+INFO [2022-08-09 13:28:00]            word1_error_any_weighted =  4128
+INFO [2022-08-09 13:28:00]            word2_error_any_weighted =  3412
+INFO [2022-08-09 13:28:00]            word3_error_any_weighted =  2939
+INFO [2022-08-09 13:28:00]            word5_error_any_weighted =  2807
+INFO [2022-08-09 14:43:20] Interation:  5000
+INFO [2022-08-09 14:43:20]            cum_count =  5869
+INFO [2022-08-09 14:43:20]            word1_error =  4837
+INFO [2022-08-09 14:43:20]            word2_error =  4470
+INFO [2022-08-09 14:43:20]            word3_error =  4279
+INFO [2022-08-09 14:43:20]            word5_error =  4171
+INFO [2022-08-09 14:43:20]            word1_error_weighted =  5686
+INFO [2022-08-09 14:43:20]            word2_error_weighted =  5076
+INFO [2022-08-09 14:43:20]            word3_error_weighted =  4626
+INFO [2022-08-09 14:43:20]            word5_error_weighted =  4351
+INFO [2022-08-09 14:43:20]            word1_error_any =  4437
+INFO [2022-08-09 14:43:20]            word2_error_any =  3855
+INFO [2022-08-09 14:43:20]            word3_error_any =  3489
+INFO [2022-08-09 14:43:20]            word5_error_any =  3411
+INFO [2022-08-09 14:43:20]            word1_error_any_weighted =  5141
+INFO [2022-08-09 14:43:20]            word2_error_any_weighted =  4263
+INFO [2022-08-09 14:43:20]            word3_error_any_weighted =  3674
+INFO [2022-08-09 14:43:20]            word5_error_any_weighted =  3483
+INFO [2022-08-09 15:57:34] Interation:  6000
+INFO [2022-08-09 15:57:34]            cum_count =  7125
+INFO [2022-08-09 15:57:34]            word1_error =  5805
+INFO [2022-08-09 15:57:34]            word2_error =  5369
+INFO [2022-08-09 15:57:34]            word3_error =  5126
+INFO [2022-08-09 15:57:34]            word5_error =  4995
+INFO [2022-08-09 15:57:34]            word1_error_weighted =  6910
+INFO [2022-08-09 15:57:34]            word2_error_weighted =  6208
+INFO [2022-08-09 15:57:34]            word3_error_weighted =  5577
+INFO [2022-08-09 15:57:34]            word5_error_weighted =  5220
+INFO [2022-08-09 15:57:34]            word1_error_any =  5317
+INFO [2022-08-09 15:57:34]            word2_error_any =  4617
+INFO [2022-08-09 15:57:34]            word3_error_any =  4171
+INFO [2022-08-09 15:57:34]            word5_error_any =  4083
+INFO [2022-08-09 15:57:34]            word1_error_any_weighted =  6259
+INFO [2022-08-09 15:57:34]            word2_error_any_weighted =  5124
+INFO [2022-08-09 15:57:34]            word3_error_any_weighted =  4368
+INFO [2022-08-09 15:57:34]            word5_error_any_weighted =  4172
+INFO [2022-08-09 17:11:48] Interation:  7000
+INFO [2022-08-09 17:11:48]            cum_count =  8260
+INFO [2022-08-09 17:11:48]            word1_error =  6777
+INFO [2022-08-09 17:11:48]            word2_error =  6257
+INFO [2022-08-09 17:11:48]            word3_error =  5959
+INFO [2022-08-09 17:11:48]            word5_error =  5813
+INFO [2022-08-09 17:11:48]            word1_error_weighted =  8002
+INFO [2022-08-09 17:11:48]            word2_error_weighted =  7204
+INFO [2022-08-09 17:11:48]            word3_error_weighted =  6497
+INFO [2022-08-09 17:11:48]            word5_error_weighted =  6067
+INFO [2022-08-09 17:11:48]            word1_error_any =  6193
+INFO [2022-08-09 17:11:48]            word2_error_any =  5372
+INFO [2022-08-09 17:11:48]            word3_error_any =  4844
+INFO [2022-08-09 17:11:48]            word5_error_any =  4748
+INFO [2022-08-09 17:11:48]            word1_error_any_weighted =  7234
+INFO [2022-08-09 17:11:48]            word2_error_any_weighted =  5961
+INFO [2022-08-09 17:11:48]            word3_error_any_weighted =  5064
+INFO [2022-08-09 17:11:48]            word5_error_any_weighted =  4857
+INFO [2022-08-09 18:28:11] Interation:  8000
+INFO [2022-08-09 18:28:11]            cum_count =  9693
+INFO [2022-08-09 18:28:11]            word1_error =  7742
+INFO [2022-08-09 18:28:11]            word2_error =  7136
+INFO [2022-08-09 18:28:11]            word3_error =  6810
+INFO [2022-08-09 18:28:11]            word5_error =  6647
+INFO [2022-08-09 18:28:11]            word1_error_weighted =  9168
+INFO [2022-08-09 18:28:11]            word2_error_weighted =  8228
+INFO [2022-08-09 18:28:11]            word3_error_weighted =  7484
+INFO [2022-08-09 18:28:11]            word5_error_weighted =  6968
+INFO [2022-08-09 18:28:11]            word1_error_any =  7056
+INFO [2022-08-09 18:28:11]            word2_error_any =  6120
+INFO [2022-08-09 18:28:11]            word3_error_any =  5522
+INFO [2022-08-09 18:28:11]            word5_error_any =  5424
+INFO [2022-08-09 18:28:11]            word1_error_any_weighted =  8253
+INFO [2022-08-09 18:28:11]            word2_error_any_weighted =  6840
+INFO [2022-08-09 18:28:11]            word3_error_any_weighted =  5840
+INFO [2022-08-09 18:28:11]            word5_error_any_weighted =  5544
+INFO [2022-08-09 19:50:15] Interation:  9000
+INFO [2022-08-09 19:50:15]            cum_count =  10861
+INFO [2022-08-09 19:50:15]            word1_error =  8698
+INFO [2022-08-09 19:50:15]            word2_error =  8004
+INFO [2022-08-09 19:50:15]            word3_error =  7645
+INFO [2022-08-09 19:50:15]            word5_error =  7485
+INFO [2022-08-09 19:50:15]            word1_error_weighted =  10283
+INFO [2022-08-09 19:50:15]            word2_error_weighted =  9228
+INFO [2022-08-09 19:50:15]            word3_error_weighted =  8413
+INFO [2022-08-09 19:50:15]            word5_error_weighted =  7857
+INFO [2022-08-09 19:50:15]            word1_error_any =  7914
+INFO [2022-08-09 19:50:15]            word2_error_any =  6872
+INFO [2022-08-09 19:50:15]            word3_error_any =  6202
+INFO [2022-08-09 19:50:15]            word5_error_any =  6112
+INFO [2022-08-09 19:50:15]            word1_error_any_weighted =  9238
+INFO [2022-08-09 19:50:15]            word2_error_any_weighted =  7696
+INFO [2022-08-09 19:50:15]            word3_error_any_weighted =  6537
+INFO [2022-08-09 19:50:15]            word5_error_any_weighted =  6248
+INFO [2022-08-09 21:36:02] Interation:  10000
+INFO [2022-08-09 21:36:02]            cum_count =  12007
+INFO [2022-08-09 21:36:02]            word1_error =  9663
+INFO [2022-08-09 21:36:02]            word2_error =  8874
+INFO [2022-08-09 21:36:02]            word3_error =  8482
+INFO [2022-08-09 21:36:02]            word5_error =  8298
+INFO [2022-08-09 21:36:02]            word1_error_weighted =  11380
+INFO [2022-08-09 21:36:02]            word2_error_weighted =  10202
+INFO [2022-08-09 21:36:02]            word3_error_weighted =  9336
+INFO [2022-08-09 21:36:02]            word5_error_weighted =  8723
+INFO [2022-08-09 21:36:02]            word1_error_any =  8801
+INFO [2022-08-09 21:36:02]            word2_error_any =  7643
+INFO [2022-08-09 21:36:02]            word3_error_any =  6896
+INFO [2022-08-09 21:36:02]            word5_error_any =  6779
+INFO [2022-08-09 21:36:02]            word1_error_any_weighted =  10218
+INFO [2022-08-09 21:36:02]            word2_error_any_weighted =  8542
+INFO [2022-08-09 21:36:02]            word3_error_any_weighted =  7270
+INFO [2022-08-09 21:36:02]            word5_error_any_weighted =  6938
+INFO [2022-08-09 21:36:02] VALIDATION RESULTS:
+INFO [2022-08-09 21:36:02] Number of n-grams tested:  10000  out of  5518610
+INFO [2022-08-09 21:36:02] Cumulative count of n-grams tested:  12007  out of  5645061
+INFO [2022-08-09 21:36:02] Word 1 Model errors for first guess:  9663  ( 97 %) and weighted  11380  ( 95 %)
+INFO [2022-08-09 21:36:02] Word 2 Model errors for first guess:  8874  ( 89 %) and weighted  10202  ( 85 %)
+INFO [2022-08-09 21:36:02] Word 3 Model errors for first guess:  8482  ( 85 %) and weighted  9336  ( 78 %)
+INFO [2022-08-09 21:36:02] Word 5 Model errors for first guess:  8298  ( 83 %) and weighted  8723  ( 73 %)
+INFO [2022-08-09 21:36:02] Word 1 Model errors for any guess:  8801  ( 88 %) and weighted  10218  ( 85 %)
+INFO [2022-08-09 21:36:02] Word 2 Model errors for any guess:  7643  ( 76 %) and weighted  8542  ( 71 %)
+INFO [2022-08-09 21:36:02] Word 3 Model errors for any guess:  6896  ( 69 %) and weighted  7270  ( 61 %)
+INFO [2022-08-09 21:36:02] Word 5 Model errors for any guess:  6779  ( 68 %) and weighted  6938  ( 58 %)
